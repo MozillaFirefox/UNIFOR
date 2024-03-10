@@ -4,10 +4,10 @@ flowchart TD
 A([Ínicio])-->B{{Digite um número:}}
 
 B --> C[/numero/]
-Z --> D{{Digite outro número}}
-D --> Z[/numero/]
-Y --> E{{Digite outro número}}
-E --> Y[/numero/]
-X --> F{{Digite um último número}}
-F --> X[/numero/]
+C --> D{{Digite outro número}}
+D --> E[/numero/]
+E --> F{{Digite outro número}}
+F --> G[/numero/]
+G --> H{{Digite um último número}}
+H --> I[/numero/]
 
