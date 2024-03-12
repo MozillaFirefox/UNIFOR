@@ -1,5 +1,6 @@
 
 ```mermaid
+
 flowchart td
 
 A([Ínicio]) -->B{numero < 30}
