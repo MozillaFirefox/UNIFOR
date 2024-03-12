@@ -10,7 +10,7 @@ E --> F{{Digite outro número}}
 F --> G[/numero3/]
 G --> H{{Digite um último número}}
 H --> I[/numero4/]
-I --> J [/Opa/]
-J -->K {[Resultado}}
+I --> J {{Opa}}
+J -->K {{Resultado}}
 K -->L ([Fim]) 
 
