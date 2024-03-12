@@ -5,9 +5,9 @@ flowchart TD
 
  A([Ínicio])-->B{numero < 30}
 
-B--F-->C[[numero + 1]]
+B--F-->C[numero + 1]
 C-->B
-B--T-->D[[Finalizar código]]
+B--T-->D[Finalizar código]
 D-->F([Fim])
 
 ```
