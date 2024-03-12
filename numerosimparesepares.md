@@ -3,7 +3,7 @@
 
 flowchart td
 
- A([Ínicio]) -->B{numero < 30}
+ A([Ínicio])-->B{numero < 30}
 
 B --F-->C
 
