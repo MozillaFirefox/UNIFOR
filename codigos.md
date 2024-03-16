@@ -74,8 +74,13 @@ A([INICIO]) --> B([FIM])
 6 SE salariovelho < 0 ENTAO
 7    salarionovo = 0
 8 SENAO
-9   SE salariovelho
-FIM_ALGORITMO
+9   SE salariovelho =< 500 ENTÃO
+10  salarionovo = salariovelho*1.2
+11  SENAO salarionovo = salariovelho*1.1
+12  FIM_SE
+13FIM_SE
+14ESCREVA "O seu novo salário é"salarionovo 
+15FIM_ALGORITMO
 ```
 
 #### Teste de mesa (1.0 ponto)
