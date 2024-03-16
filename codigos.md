@@ -65,7 +65,12 @@ B --> C[\salariovelho\]
 C --> D{salariovelho <0}
 D --V--> E[salarionovo = 0]
 D--F--> F{salariovelho =<500}
-F--V-->G  
+F--V-->G[salarionovo = salariovelho*1.2]
+F--F-->H[salarionovo = salariovelho*1.1]
+E-->J[\salarionovo\]
+G-->J
+H-->J
+J-->K{{"O seu novo salário é"salarionovo}} 
 
 ```
 
