@@ -99,9 +99,9 @@ K-->L([FIM])
 #### Teste de mesa (1.0 ponto)
 
 | salariovelho | salariovelho < 0 | salariovelho =< 500 | saída |  
-|      --      |      --      |      --      |      --      | 
-| Adicione     | espaço       | se quiser    |  alinhar     |
-| verticais,   | mas          | não é        | obrigatório. | 
+|      -1     |     T      |      --     |      O seu salário novo é 0      | 
+| 500    | F    | T   |  O seu salário novo é 600   |
+| 1000   | F         | F        | O seu salário novo é 1100 | 
 
 ## Exercício 03 (3 pontos)
 Represente, em fluxograma e pseudocódigo, um algoritmo para calcular a média aritmética entre duas notas de um aluno e mostrar sua situação, que pode ser aprovado ou reprovado.
