@@ -67,7 +67,7 @@ A([INICIO]) --> B([FIM])
 
 ```
 1 ALGORITMO salarionovo
-2 DECLARE salariovelho, salarionovo
+2 DECLARE salariovelho, salarionovo:REAL
 3 ESCREVA "Digite seu salário"
 4 INICIO
 5 LEIA salariovelho
