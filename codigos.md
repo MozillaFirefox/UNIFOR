@@ -70,7 +70,8 @@ F--F-->H[salarionovo = salariovelho*1.1]
 E-->J[\salarionovo\]
 G-->J
 H-->J
-J-->K{{"O seu novo salário é"salarionovo}} 
+J-->K{{"O seu novo salário é "salarionovo}}
+K-->L([FIM])
 
 ```
 
@@ -91,7 +92,7 @@ J-->K{{"O seu novo salário é"salarionovo}}
 12  FIM_SE
 13FIM_SE
 14LEIA salarionovo
-15ESCREVA "O seu novo salário é"salarionovo 
+15ESCREVA "O seu novo salário é" salarionovo 
 16FIM_ALGORITMO
 ```
 
