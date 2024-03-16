@@ -66,7 +66,15 @@ A([INICIO]) --> B([FIM])
 #### Pseudocódigo (1.0 ponto)
 
 ```
-Algoritmo ContaAprovacoes
+1 ALGORITMO salarionovo
+2 DECLARE salariovelho, salarionovo
+3 ESCREVA "Digite seu salário"
+4 INICIO
+5 LEIA salariovelho
+6 SE salariovelho < 0 ENTAO
+7    salarionovo = 0
+8 SENAO
+9   SE salariovelho
 FIM_ALGORITMO
 ```
 
