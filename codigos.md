@@ -86,7 +86,7 @@ K-->L([FIM])
 6 SE salariovelho < 0 ENTAO
 7    salarionovo = 0
 8 SENAO
-9   SE salariovelho =< 500 ENTÃO
+9   SE salariovelho =< 500 ENTAO
 10  salarionovo = salariovelho*1.2
 11  SENAO salarionovo = salariovelho*1.1
 12  FIM_SE
@@ -116,8 +116,26 @@ A([INICIO]) --> B([FIM])
 #### Pseudocódigo (1 ponto)
 
 ```
-Algoritmo ContaAprovacoes
-FIM_ALGORITMO
+1 ALGORITMO Contaaprovações
+2 DECLARE nota1,nota2,média:REAL
+3 ESCREVA "Digite sua primeira nota"
+4 INICIO
+5 LEIA nota1
+6 SE nota1 > 10 or nota1 <0 ENTAO
+7   ESCREVA"Nota inválida"
+8 SENAO
+9   ESCREVA nota2
+10  LEIA nota2
+11  SE nota2 > 10 or nota2 <0 ENTAO
+12     ESCREVA"Nota inválida"
+13  SENÃO
+14   media = nota1+nota2
+15   FIM_SE
+16FIM_SE
+17 LEIA media
+18 SE media =< 7 ENTAO
+19 ESCREVA "Você foi reprovado"
+3 FIM_ALGORITMO
 ```
 
 #### Teste de mesa (1 ponto)
