@@ -62,8 +62,10 @@ Sabe-se que os funcionários que recebem atualmente salário de até R$ 500 ter�
 flowchart TD
 A([INICIO]) --> B{{Digite seu salário}}
 B --> C[\salariovelho\]
-C --> D {salario velho <0}
-D --V-->E[\sala
+C --> D {salariovelho <0}
+D --V-->E[salarionovo = 0]
+D--F-->F{salariovelho =<500}
+E--V-->
 ```
 
 #### Pseudocódigo (1.0 ponto)
