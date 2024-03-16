@@ -65,7 +65,7 @@ B --> C[\salariovelho\]
 C --> D{salariovelho <0}
 D --V--> E[salarionovo = 0]
 D--F--> F{salariovelho =<500}
-
+F--V-->G  
 
 ```
 
@@ -85,8 +85,9 @@ D--F--> F{salariovelho =<500}
 11  SENAO salarionovo = salariovelho*1.1
 12  FIM_SE
 13FIM_SE
-14ESCREVA "O seu novo salário é"salarionovo 
-15FIM_ALGORITMO
+14LEIA salarionovo
+15ESCREVA "O seu novo salário é"salarionovo 
+16FIM_ALGORITMO
 ```
 
 #### Teste de mesa (1.0 ponto)
