@@ -314,7 +314,12 @@ A([INICIO]) --> B([FIM])
 #### Pseudocódigo (1.0 ponto)
 
 ```
-Algoritmo ConverteCelsiusFarenheit
+1ALGORITMO ConverteCelsiusFarenheit
+2
+3
+4
+5
+6
 FIM_ALGORITMO
 ```
 
