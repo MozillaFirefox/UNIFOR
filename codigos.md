@@ -295,10 +295,11 @@ media:REAL
 
 #### Teste de mesa (0.5 ponto)
 
-| numeros | media| saída | 
-|     1,2,3,4      |      2.5      |  Essa é a média: 2.5         |       
-| -3,-4,-5,6     | -1.5       | Essa é a média:-1.5    |  
-| 0,2,3,10   | 3.75          | Essa é a média: 3.75      | 
+| numeros | media | saída | 
+| -- | -- | -- |
+| 1,2,3,4 | 2.5   |  Essa é a média: 2.5       |       
+| -3,-4,-5,6 | -1.5  | Essa é a média:-1.5    |  
+| 0,2,3,10   | 3.75  | Essa é a média: 3.75      | 
 
 ### Exercício 02 (2.5 pontos)
 Leia uma temperatura dada em Celsius (C) e imprima o equivalente em Fahrenheit (F). (Fórmula de conversão: F = (9/5) * C + 32)
