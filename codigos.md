@@ -149,7 +149,7 @@ O-->P
 15   FIM_SE
 16FIM_SE
 17 LEIA media
-18 SE media =< 7 ENTAO
+18 SE media < 7 ENTAO
 19 ESCREVA "Você foi reprovado"
 20 SENAO
 21 ESCREVA "Você foi aprovado"
@@ -159,11 +159,11 @@ O-->P
 
 #### Teste de mesa (1 ponto)
 
-| nota1| nota2 | media |  | nome_coluna5 | 
-|      --      |      --      |      --      |      --      |      --      | 
-| Adicione     | espaço       | se quiser    |  alinhar     | as barras    |
-| verticais,   | mas          | não é        | obrigatório. | Entendido ?  |
-
+| nota1| nota2 | media | saída |  | 
+|      -1      |      --      |      --      |    Nota inválida    |     
+| 7   | -1       | --   |  Nota inválida    |     
+| 7   | 7          | 7      | Você foi aprovado | 
+| 7|6.5|6.75|Você foi reprovado|
 ## Exercício 04 (3 pontos)
 Represente, em fluxograma e pseudocódigo, um algoritmo que, a partir da idade do candidato(a), determinar se pode ou não tirar a CNH. 
 Caso não atender a restrição de idade, calcular quantos anos faltam para o candidato estar apto.
