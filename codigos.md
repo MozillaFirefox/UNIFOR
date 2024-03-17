@@ -346,7 +346,7 @@ O algoritmo deve retornar o resultado da operação selecionada simulando todas 
 ```mermaid
 flowchart TD
 A([INICIO]) --> B{{"Digite dois numero e faça uma operação aritimética com eles"}}
-B-->C [\numero1,numero2\]
+B-->C[\numero1,numero2\]
 C-->D{+}
 D--T-->E[resultado = numero1 + numero2]
 E-->F[\resultado\]
