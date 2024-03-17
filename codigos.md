@@ -178,7 +178,7 @@ C-->D{idade < 18}
 D--T-->E[18 -idade=faltam]
 D--F-->F{{Você pode tirar a CNH}}
 E-->G[\faltam\]
-G-->H{{"Faltam"faltam"anos para você poder tirar a CNH}}
+G-->H{{"Faltam"faltam"anos para você poder tirar a CNH"}}
 F-->I([FIM])
 H-->I
 ```
