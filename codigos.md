@@ -308,7 +308,12 @@ Leia uma temperatura dada em Celsius (C) e imprima o equivalente em Fahrenheit (
 
 ```mermaid
 flowchart TD
-A([INICIO]) --> B([FIM])
+A([INICIO])-->B{{"Dê uma tempertaura em Celsius"}}
+B-->C[\temp_celsius\]
+C-->D[temp_celsius*(9/5) + 32 = temp_farenheit]
+D-->E[\temp_farenheit\]
+E-->F{{"Essa é a temperatura em F°"temp_farenheit}}
+F-->G([FIM])
 ```
 
 #### Pseudocódigo (1.0 ponto)
@@ -321,7 +326,7 @@ A([INICIO]) --> B([FIM])
 5LEIA temp_celsius
 6temp_celsius*(9/5) + 32 = temp_farenheit
 7LEIA temp_farenheit
-8ESCREVA "Esse é a temperatura em F°"
+8ESCREVA "Essa é a temperatura em F°"temp_farenheit
 9FIM_ALGORITMO
 ```
 
