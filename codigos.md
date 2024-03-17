@@ -160,12 +160,12 @@ O-->P
 ```
 
 #### Teste de mesa (1 ponto)
-| salariovelho | salariovelho < 0 | salario velho =< 500 | salarionovo | Saída |
-| -- | -- | -- | -- | -- | 
-| -1 | T |   | 0  | "O seu novo salário é 0" |
-| 500  | F | T | 600 | "O seu novo salário é 600" |
-| 1000 | F | T | 1100 | "O seu novo salário é 1100" |
-
+| nota1 | nota2 | média | Saída |
+| -- | -- | -- | -- | 
+| -1 |  |   |   | "Nota inválida" |
+| 7  | -1 |  |   "Nota inválida" |
+| 7 | 7 | 7 | "Você foi aprovado" | 
+| 7 | 6.5 | 6.75 | "Você foi reprovado" | 
 ## Exercício 04 (3 pontos)
 Represente, em fluxograma e pseudocódigo, um algoritmo que, a partir da idade do candidato(a), determinar se pode ou não tirar a CNH. 
 Caso não atender a restrição de idade, calcular quantos anos faltam para o candidato estar apto.
