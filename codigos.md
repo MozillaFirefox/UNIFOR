@@ -310,7 +310,7 @@ Leia uma temperatura dada em Celsius (C) e imprima o equivalente em Fahrenheit (
 flowchart TD
 A([INICIO])-->B{{"Dê uma tempertaura em Celsius"}}
 B-->C[\temp_celsius\]
-C-->D[temp_celsius * (9/5) + 32 = temp_farenheit]
+C-->D[ (9/5) * temp_celsius  + 32 = temp_farenheit]
 D-->E[\temp_farenheit\]
 E-->F{{"Essa é a temperatura em F°"temp_farenheit}}
 F-->G([FIM])
