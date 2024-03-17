@@ -274,7 +274,8 @@ A([INICIO]) --> B{{Digite quatro números inteiros}}
 B-->C[\numero1,numero2,numero3,numero4\]
 C-->D[media*4 = numero1+ numero2 + numero 3 + numero4]
 D-->E[\media\]
-E-->
+E-->F{{"Sua média é" media"}}
+F-->G([FIM])
 ```
 
 #### Pseudocódigo (1.0 ponto)
