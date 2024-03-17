@@ -276,7 +276,8 @@ A([INICIO]) --> B([FIM])
 #### Pseudocódigo (1.0 ponto)
 
 ```
-Algoritmo Media
+1 ALGORITMO Media
+2
 FIM_ALGORITMO
 ```
 
