@@ -159,7 +159,7 @@ O-->P
 
 #### Teste de mesa (1 ponto)
 
-| nota1| nota2 | media | saída |  | 
+| nota1 | nota2 | media | saída |   
 |      -1      |      --      |      --      |    Nota inválida    |     
 | 7   | -1       | --   |  Nota inválida    |     
 | 7   | 7          | 7      | Você foi aprovado | 
