@@ -172,7 +172,7 @@ Caso não atender a restrição de idade, calcular quantos anos faltam para o ca
 
 ```mermaid
 flowchart TD
-A([INICIO]) --> B{{Digite sua idade aqui"
+A([INICIO]) --> B{{Digite sua idade aqui"}}
 B-->C[\idade\]
 C-->D{idade < 18}
 D--T-->E[18 -idade=faltam]
