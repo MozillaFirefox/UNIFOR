@@ -400,15 +400,15 @@ Elaborar um algoritmo que, dada a idade, classifique nas categorias: infantil A 
 flowchart TD
 A([INICIO]) --> B{{"Escreva aqui sua idade"}}
 B-->C[\idade\]
-C-->D{4<idade<8}
+C-->D{4< e <8}
 D--T-->E{{Infantil A}}
-D--F-->F{7<idade<11}
+D--F-->F{7< e <11}
 F--T-->G{{Infantil B}}
-F--F-->H{10<idade<14}
+F--F-->H{10< e <14}
 H--T-->I{{Juvenil A}}
-H--F-->J{13<idade<18}
+H--F-->J{13< e <18}
 J--T-->K{{Juvenil B}}
-J--F-->L{17<idade}
+J--F-->L{17< Idade}
 L--T-->M{{Adulto}}
 L--F-->N{{Jovem demais}}
 N-->O([FIM])
