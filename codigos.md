@@ -333,9 +333,9 @@ F-->G([FIM])
 #### Teste de mesa (0.5 ponto)
 
 | Temperatura Celsius | Temperatura Farenheit | Saída | 
-|      --      |      --      |      --      |     
-| Adicione     | espaço       | se quiser    | 
-| verticais,   | mas          | não é        |
+|      --      |      --      |   --        |     
+| 0   | 32       | Essa é a temperatura em F° 32   | 
+| 100  |  257         | Essa é a temperatura em F°  212    |
 
 ### Exercício 03 (2.5 pontos)
 Receba dois números reais e um operador e efetue a operação correspondente com os valores recebidos (operandos). 
