@@ -180,7 +180,7 @@ C-->D{idade < 18}
 D--T-->E[18 -idade=faltam]
 D--F-->F{{Você pode tirar a CNH}}
 E-->G[\faltam\]
-G-->H{{"Faltam faltam anos para você poder tirar a CNH"}}
+G-->H{{"Faltam faltam ano(s) para você poder tirar a CNH"}}
 F-->I([FIM])
 H-->I
 ```
@@ -196,7 +196,7 @@ H-->I
 6SE idade <18 ENTAO
 7 18-idade=faltam
 8 LEIA faltam
-9 ESCREVA "Faltam"faltam"anos para você poder tirar a CNH"
+9 ESCREVA "Faltam"faltam"ano(s) para você poder tirar a CNH"
 10SENAO
 11ESCREVA"Você pode tirar a CNH"
 12 FIM_SE
@@ -206,10 +206,11 @@ H-->I
 
 #### Teste de mesa (1.0 ponto)
 
-| idade | menor que 18 | faltam | pode, não pode | nome_coluna5 | 
-|     18      |     F      |      --      |    pode      |      --      | 
-| 17   | T       | 1    |  não pode     |    |
-| -1 | T          | 19        | não pode |   |
+| idade | idade < 18 | faltam | Saída |
+| -- | -- | -- | -- | 
+| 18 | F |      | "Você pode tirar a CNH" |
+| 17  | T | 1 |   "Faltam 1 ano(s) para você poder tirar a CNH" |
+| -1 | T | 19 | "Faltam 19 anos para você poder tirar a CNH" | 
 
 
 
@@ -231,11 +232,6 @@ H-->I
 
 
 
-| nota1 | nota2 | media | saída |   
-|      -1      |      --      |      --      |    Nota inválida    |     
-| 7   | -1       | --   |  Nota inválida    |     
-| 7   | 7          | 7      | Você foi aprovado | 
-| 7|6.5|6.75|Você foi reprovado|
 
 
 
