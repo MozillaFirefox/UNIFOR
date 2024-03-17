@@ -99,7 +99,6 @@ K-->L([FIM])
 #### Teste de mesa (1.0 ponto)
 
 | salariovelho | salariovelho < 0 | salariovelho =< 500 | saída |  
-| -- | -- | -- | -- | -- |
 |      -1     |     T      |      --     |      O seu salário novo é 0      | 
 | 500    | F    | T   |  O seu salário novo é 600   |
 | 1000   | F         | F        | O seu salário novo é 1100 | 
@@ -176,7 +175,12 @@ flowchart TD
 A([INICIO]) --> B{{Digite sua idade aqui"
 B-->C[\idade\]
 C-->D{idade < 18}
-D--T-->E
+D--T-->E[18 -idade=faltam]
+D--F-->F{{Você pode tirar a CNH}}
+E-->G[\faltam\]
+G-->H{{"Faltam"faltam"anos para você poder tirar a CNH}}
+F-->I([FIM])
+H-->I
 ```
 
 #### Pseudocódigo (1.0 ponto)
