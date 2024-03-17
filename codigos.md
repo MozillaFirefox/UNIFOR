@@ -118,9 +118,9 @@ D--F--> F{{Digite sua segunda nota}}
 F--> G[\nota2\]
 G--> H{nota2> 10 or nota2<0}
 H--T--> I{{"Nota inválida"}}
-H--F-->J[Ok]
-J--> K[media = (nota1 + nota2)%2]
-K--> L [\media\]
+H--F-->J[nota1 + nota2=media*2]
+J--> K[\media\]
+K--> L [Blz]
 L--> M{media <7}
 M--T--> N{{"Você foi reprovado}}
 M--F--> O{{"Você foi aprovado}}
