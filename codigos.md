@@ -99,6 +99,7 @@ K-->L([FIM])
 #### Teste de mesa (1.0 ponto)
 
 | salariovelho | salariovelho < 0 | salariovelho =< 500 | saída |  
+| -- | -- | -- | -- | -- |
 |      -1     |     T      |      --     |      O seu salário novo é 0      | 
 | 500    | F    | T   |  O seu salário novo é 600   |
 | 1000   | F         | F        | O seu salário novo é 1100 | 
