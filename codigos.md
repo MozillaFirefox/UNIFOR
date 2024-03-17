@@ -206,7 +206,7 @@ H-->I
 
 | idade | menor que 18 | faltam | pode, não pode | nome_coluna5 | 
 |     18      |     F      |      --      |    pode      |      --      | 
-|17   | T       | 1    |  não pode     |    |
+| 17   | T       | 1    |  não pode     |    |
 | -1 | T          | 19        | não pode |   |
 
 
