@@ -274,7 +274,7 @@ A([INICIO]) --> B{{Digite quatro números inteiros}}
 B-->C[\numero1,numero2,numero3,numero4\]
 C-->D[media*4 = numero1+ numero2 + numero 3 + numero4]
 D-->E[\media\]
-E-->F{{"Sua média é" media}}
+E-->F{{"Essa é a média:" media}}
 F-->G([FIM])
 ```
 
@@ -295,10 +295,10 @@ media:REAL
 
 #### Teste de mesa (0.5 ponto)
 
-| nome_coluna1 | nome_coluna2 | nome_coluna3 | nome_coluna4 | nome_coluna5 | 
-|      --      |      --      |      --      |      --      |      --      | 
-| Adicione     | espaço       | se quiser    |  alinhar     | as barras    |
-| verticais,   | mas          | não é        | obrigatório. | Entendido ?  |
+| numeros | media| saída | 
+|     1,2,3,4      |      2.5      |  Essa é a média: 2.5         |       
+| -3,-4,-5,6     | -1.5       | Essa é a média:-1.5    |  
+| 0,2,3,10   | 3.75          | Essa é a média: 3.75      | 
 
 ### Exercício 02 (2.5 pontos)
 Leia uma temperatura dada em Celsius (C) e imprima o equivalente em Fahrenheit (F). (Fórmula de conversão: F = (9/5) * C + 32)
