@@ -162,7 +162,7 @@ O-->P
 #### Teste de mesa (1 ponto)
 | nota1 | nota2 | média | Saída |
 | -- | -- | -- | -- | 
-| -1 |  |   |   | "Nota inválida" |
+| -1 |  |      | "Nota inválida" |
 | 7  | -1 |  |   "Nota inválida" |
 | 7 | 7 | 7 | "Você foi aprovado" | 
 | 7 | 6.5 | 6.75 | "Você foi reprovado" | 
