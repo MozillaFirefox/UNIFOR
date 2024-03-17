@@ -97,7 +97,7 @@ K-->L([FIM])
 ```
 
 #### Teste de mesa (1.0 ponto)
-| numero | numero >= 0 | resto | resto == 0 | Saída |
+| salariovelho | salariovelho < 0 | salario velho =< 500 | resto == 0 | Saída |
 | -- | -- | -- | -- | -- | 
 | -1 | F |   |   | "O número deve ser postivo!" |
 | 0  | V | 0 | V | "O número é par!" |
