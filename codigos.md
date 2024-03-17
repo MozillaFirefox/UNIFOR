@@ -121,8 +121,8 @@ H--T--> I{{"Nota inválida"}}
 H--F-->J[nota1 + nota2=media*2]
 J--> L[\media\]
 L--> M{media <7}
-M--T--> N{{"Você foi reprovado}};
-M--F--> O{{"Você foi aprovado}}
+M--T--> N{{"Você foi reprovado"}}
+M--F--> O{{"Você foi aprovado"}}
 E-->P([FIM])
 I-->P
 N-->P
