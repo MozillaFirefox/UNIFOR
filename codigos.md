@@ -145,7 +145,7 @@ O-->P
 11  SE nota2 > 10 or nota2 <0 ENTAO
 12     ESCREVA"Nota inválida"
 13  SENÃO
-14   media = (nota1+nota2)/2
+14   media*2 = nota1+nota2
 15   FIM_SE
 16FIM_SE
 17 LEIA media
@@ -159,7 +159,7 @@ O-->P
 
 #### Teste de mesa (1 ponto)
 
-| nome_coluna1 | nome_coluna2 | nome_coluna3 | nome_coluna4 | nome_coluna5 | 
+| nota1| nota2 | media |  | nome_coluna5 | 
 |      --      |      --      |      --      |      --      |      --      | 
 | Adicione     | espaço       | se quiser    |  alinhar     | as barras    |
 | verticais,   | mas          | não é        | obrigatório. | Entendido ?  |
