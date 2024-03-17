@@ -118,15 +118,16 @@ D--F--> F{{Digite sua segunda nota}}
 F--> G[\nota2\]
 G--> H{nota2> 10 or nota2<0}
 H--T--> I{{"Nota inválida"}}
-H--F-->J {{media=(nota1 +nota2)/2}}
-J--> K[\media\]
-K--> L{media <7}
-L--T--> M{{"Você foi reprovado}}
-L--F--> N{{"Você foi aprovado}}
-E-->O([FIM])
-I-->O
-M-->O
-N-->O
+H--F-->J[Ok]
+J--> K[media = (nota1 + nota2)]
+K--> L [\media\]
+L--> M{media <7}
+M--T--> N{{"Você foi reprovado}}
+M--F--> O{{"Você foi aprovado}}
+E-->P([FIM])
+I-->P
+M-->P
+N-->P
 ```
 
 #### Pseudocódigo (1 ponto)
