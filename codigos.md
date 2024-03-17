@@ -125,8 +125,8 @@ M--T--> N{{"Você foi reprovado}}
 M--F--> O{{"Você foi aprovado}}
 E-->P([FIM])
 I-->P
-M-->P
 N-->P
+O-->P
 ```
 
 #### Pseudocódigo (1 ponto)
