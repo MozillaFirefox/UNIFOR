@@ -204,10 +204,10 @@ H-->I
 
 #### Teste de mesa (1.0 ponto)
 
-| nome_coluna1 | nome_coluna2 | nome_coluna3 | nome_coluna4 | nome_coluna5 | 
-|      --      |      --      |      --      |      --      |      --      | 
-| Adicione     | espaço       | se quiser    |  alinhar     | as barras    |
-| verticais,   | mas          | não é        | obrigatório. | Entendido ?  |
+| idade | menor que 18 | faltam | pode, não pode | nome_coluna5 | 
+|     18      |     F      |      --      |    pode      |      --      | 
+|17   | T       | 1    |  não pode     |    |
+| -1 | T          | 19        | não pode |   |
 
 
 
