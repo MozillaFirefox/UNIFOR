@@ -433,7 +433,7 @@ M-->O
 8 ESCREVA Infatil A
 9CASO idade<11 and >7
 11 ESCREVA Infantil B
-12CASO idade<14 and >11
+12CASO idade<14 and >10
 13ESCREVA Juvenil A
 14CASO idade<18 and >13
 15ESCREVA Juvenil B
@@ -447,11 +447,12 @@ M-->O
 
 #### Teste de mesa (0.5 ponto)
 
-| nome_coluna1 | nome_coluna2 | nome_coluna3 | nome_coluna4 | nome_coluna5 | 
-|      --      |      --      |      --      |      --      |      --      | 
-| Adicione     | espaço       | se quiser    |  alinhar     | as barras    |
-| verticais,   | mas          | não é        | obrigatório. | Entendido ?  |
-
+| Idade | 4< e <8 | 7< e <11 | 10< e <14 | 13< e <18 | 17< Idade | Saída |
+|      --      |      --      |      --      |      --      |      --      | -- | -- |  
+|  4    |    F   |  F   |   F    | F    | F | Jovem demais |
+| 15 |    F       |    F     | F | T  | | Juvenil B |
+|  18    |  F     |   F  |  F     | F    | T | Adulto |
+|   8   |  F     |  T   |       |     | | Infantil B |
 # UNIFOR Lista 3
 **Nome**: Aaron Magno Campos Nogueira
 **Disciplina**: Raciocínio lógico algorítm
