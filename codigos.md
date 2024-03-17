@@ -129,13 +129,16 @@ A([INICIO]) --> B([FIM])
 11  SE nota2 > 10 or nota2 <0 ENTAO
 12     ESCREVA"Nota inválida"
 13  SENÃO
-14   media = nota1+nota2
+14   media = (nota1+nota2)/2
 15   FIM_SE
 16FIM_SE
 17 LEIA media
 18 SE media =< 7 ENTAO
 19 ESCREVA "Você foi reprovado"
-3 FIM_ALGORITMO
+20 SENAO
+21 ESCREVA "Você foi aprovado"
+22 FIM_SE
+23 FIM_ALGORITMO
 ```
 
 #### Teste de mesa (1 ponto)
