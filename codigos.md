@@ -361,7 +361,8 @@ J--F-->L{/}
 L--T-->M[resultado = numero1 / numero2]
 M-->F
 L--F-->N([FIM])
-G-->N
+G-->O{{"O Resultado é"resultado}}
+O-->N
 ```
 
 #### Pseudocódigo (1.0 ponto)
@@ -384,10 +385,10 @@ FIM_ALGORITMO
 
 #### Teste de mesa (0.5 ponto)
 
-| nome_coluna1 | nome_coluna2 | nome_coluna3 | nome_coluna4 | nome_coluna5 | 
+| numeros | soma | subtração | multiplicação | divisão |  
 |      --      |      --      |      --      |      --      |      --      | 
-| Adicione     | espaço       | se quiser    |  alinhar     | as barras    |
-| verticais,   | mas          | não é        | obrigatório. | Entendido ?  |
+| 1,2     | 3   | -1    |  2     | 0.5    |
+| 3,4   | 7          | -1        | 12 | 0.75  |
 
 ### Exercício 04 (2.5 pontos)
 Elaborar um algoritmo que, dada a idade, classifique nas categorias: infantil A (5 - 7 anos), infantil B (8 -10 anos), juvenil A (11 - 13 anos), juvenil B (14 -17 anos) e adulto (maiores que 18 anos).
