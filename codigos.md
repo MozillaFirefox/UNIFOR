@@ -113,8 +113,8 @@ flowchart TD
 A([INICIO]) --> B{{"Digite sua primeira nota"}}
 B-->C[\nota1\]
 C-->D{nota1 > 10 or nota1<0}
-D--T--> E{{"Nota inválida}}
-D--F--> F["Digite sua segunda nota"]
+D--T--> E{{"Nota inválida"}}
+D--F--> F{{Digite sua segunda nota}}
 F--> G[\nota2\]
 G--> H{nota2> 10 or nota2<0}
 H--T--> I{{"Nota inválida"}}
