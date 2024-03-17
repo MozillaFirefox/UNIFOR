@@ -377,9 +377,11 @@ G-->N
 8CASO "-" resultado = numero1 - numero2
 9CASO "*" resultado = numero1 * numero2
 10CASO "/" resultado = numero1 / numero2
-11FIM_ESCOLHA
-12ESCREVA "Resultado =" resultado
-13FIM_ALGORITMO
+11SENAO
+12FIM_ALGORITMO
+13FIM_ESCOLHA
+14ESCREVA "Resultado =" resultado
+15FIM_ALGORITMO
 ```
 
 #### Teste de mesa (0.5 ponto)
@@ -396,19 +398,51 @@ Elaborar um algoritmo que, dada a idade, classifique nas categorias: infantil A 
 
 ```mermaid
 flowchart TD
-A([INICIO]) --> B([FIM])
+A([INICIO]) --> B{{"Escreva aqui sua idade"}}
+B-->C[\idade\]
+C-->D{4<idade<8}
+D--T-->E{{Infantil A}}
+D--F-->F{7<idade<11}
+F--T-->G{{Infantil B}}
+F--F-->H{10<idade<14}
+H--T-->I{{Juvenil A}}
+H--F-->J{13<idade<18}
+J--T-->K{{Juvenil B}}
+J--F-->L{17<idade}
+L--T-->M{{Adulto}}
+L--F-->N{{Jovem demais}}
+N-->O([FIM])
+E-->O
+G-->O
+I-->O
+K-->O
+M-->O
+
 ```
 
 #### Pseudocódigo (1.0 ponto)
 
 ```
 1ALGORITMO ClassificaCategoria
-2DECLARE idade:INTEIRO
+2DECLARE idade:INTEIRO 
 3ESCREVA:"Digite aqui a sua idade"
 4INICIO
+5LEIA Idade
 5ESCOLHA
-6
-6FIM_ALGORITMO
+6CASO idade <8 and<4 ENTAO
+8 ESCREVA Infatil A
+9CASO idade<11 and >7
+11 ESCREVA Infantil B
+12CASO idade<14 and >11
+13ESCREVA Juvenil A
+14CASO idade<18 and >13
+15ESCREVA Juvenil B
+16CASO idade<17
+17ESCREVA Adulto
+18SENAO
+19ESCREVA "Jovem demais"
+20FIM_ESCOLHA
+21FIM_ALGORITMO
 ```
 
 #### Teste de mesa (0.5 ponto)
