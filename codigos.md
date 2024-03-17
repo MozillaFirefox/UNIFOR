@@ -97,12 +97,12 @@ K-->L([FIM])
 ```
 
 #### Teste de mesa (1.0 ponto)
-| salariovelho | salariovelho < 0 | salario velho =< 500 | resto == 0 | Saída |
+| salariovelho | salariovelho < 0 | salario velho =< 500 | salarionovo | Saída |
 | -- | -- | -- | -- | -- | 
-| -1 | F |   |   | "O número deve ser postivo!" |
-| 0  | V | 0 | V | "O número é par!" |
-| 13 | V | 1 | F | "O número é impar!" |
-| 30 | V | 0 | V | "O número é par!" |
+| -1 | T |   | 0  | "O seu novo salário é 0" |
+| 500  | F | T | 600 | "O seu novo salário é 600" |
+| 1000 | F | T | 1100 | "O seu novo salário é 1100" |
+
 
 
 ## Exercício 03 (3 pontos)
