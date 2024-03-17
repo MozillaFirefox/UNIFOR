@@ -345,13 +345,40 @@ O algoritmo deve retornar o resultado da operação selecionada simulando todas 
 
 ```mermaid
 flowchart TD
-A([INICIO]) --> B([FIM])
+A([INICIO]) --> B{{"Digite dois numero e faça uma operação aritimética com eles"}}
+B-->C [\numero1,numero2\]
+C-->D{+}
+D--T-->E[resultado = numero1 + numero2]
+E-->F[\resultado\]
+F-->G{{"Resultado ="resultado}}
+D--F-->H{-}
+H--T-->I[resultado = numero1 - numero2]
+I-->F
+H--F-->J{*}
+J--T-->K[resultado = numero1 * numero2]
+K-->F
+J--F-->L{/}
+L--T-->M[resultado = numero1 / numero2]
+M-->F
+L--F-->N([FIM])
+G-->N
 ```
 
 #### Pseudocódigo (1.0 ponto)
 
 ```
-Algoritmo Calculadora
+1ALGORITMO Calculadora
+2DECLARE numero1,numero2,resultado:REAL +,-,*,/:LÓGICO
+3ESCREVA "Digite dois números e faça uma operação aritmética com eles"
+4INICIO
+5LEIA numero1,numero2
+6ESCOLHA
+7CASO "+" resultado = numero1 + numero2
+8CASO "-" resultado = numero1 - numero2
+9CASO "*" resultado = numero1 * numero2
+10CASO "/" resultado = numero1 / numero2
+11FIM_ESCOLHA
+12ESCREVA "Resultado =" resultado
 FIM_ALGORITMO
 ```
 
