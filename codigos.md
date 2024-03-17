@@ -361,8 +361,7 @@ J--F-->L{/}
 L--T-->M[resultado = numero1 / numero2]
 M-->F
 L--F-->N([FIM])
-G-->O{{"O Resultado é"resultado}}
-O-->N
+G-->N
 ```
 
 #### Pseudocódigo (1.0 ponto)
