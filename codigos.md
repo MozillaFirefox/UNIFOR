@@ -97,11 +97,13 @@ K-->L([FIM])
 ```
 
 #### Teste de mesa (1.0 ponto)
+| numero | numero >= 0 | resto | resto == 0 | Saída |
+| -- | -- | -- | -- | -- | 
 | -1 | F |   |   | "O número deve ser postivo!" |
-| salariovelho | salariovelho < 0 | salariovelho =< 500 | saída |  
-|      -1     |     T      |           |      O seu salário novo é 0      | 
-| 500    | F    | T   |  O seu salário novo é 600   |
-| 1000   | F         | F        | O seu salário novo é 1100 | 
+| 0  | V | 0 | V | "O número é par!" |
+| 13 | V | 1 | F | "O número é impar!" |
+| 30 | V | 0 | V | "O número é par!" |
+
 
 ## Exercício 03 (3 pontos)
 Represente, em fluxograma e pseudocódigo, um algoritmo para calcular a média aritmética entre duas notas de um aluno e mostrar sua situação, que pode ser aprovado ou reprovado.
@@ -208,6 +210,35 @@ H-->I
 |     18      |     F      |      --      |    pode      |      --      | 
 | 17   | T       | 1    |  não pode     |    |
 | -1 | T          | 19        | não pode |   |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+| salariovelho | salariovelho < 0 | salariovelho =< 500 | saída |  
+|      -1     |     T      |           |      O seu salário novo é 0      | 
+| 500    | F    | T   |  O seu salário novo é 600   |
+| 1000   | F         | F        | O seu salário novo é 1100 | 
 
 
 
