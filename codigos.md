@@ -121,7 +121,12 @@ H--T-->I{{"Nota inválida"}}
 H--F-->J[media=(nota1 +nota2)/2
 J-->K[\media\]
 K-->L{media <7}
-L--T--
+L--T--M{{"Você foi reprovado}}
+L--F--N{{"Você foi aprovado}}
+E-->O([FIM])
+I-->O
+M-->O
+N-->O
 ```
 
 #### Pseudocódigo (1 ponto)
