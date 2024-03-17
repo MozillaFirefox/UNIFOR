@@ -114,11 +114,11 @@ A([INICIO]) --> B{{"Digite sua primeira nota"}}
 B-->C[\nota1\]
 C-->D{nota1 > 10 or nota1<0}
 D--T--> E{{"Nota inválida}}
-D--F--> F[opa]
+D--F--> F[opa] // {{"Digite sua segunda nota"}}
 F--> G[\nota2\]
 G--> H{nota2> 10 or nota2<0}
 H--T--> I{{"Nota inválida"}}
-H--F--> J[media=(nota1 +nota2)/2
+H--F--> J[media=(nota1 +nota2)/2]
 J--> K[\media\]
 K--> L{media <7}
 L--T--> M{{"Você foi reprovado}}
