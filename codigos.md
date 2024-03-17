@@ -315,12 +315,14 @@ A([INICIO]) --> B([FIM])
 
 ```
 1ALGORITMO ConverteCelsiusFarenheit
-2
-3
-4
-5
-6
-FIM_ALGORITMO
+2DECLARE temp_celsius, temp_farenheit:REAL
+3ESCREVA "Dê uma temperatura em Celsius"
+4INICIO
+5LEIA temp_celsius
+6temp_celsius*(9/5) + 32 = temp_farenheit
+7LEIA temp_farenheit
+8ESCREVA "Esse é a temperatura em F°"
+9FIM_ALGORITMO
 ```
 
 #### Teste de mesa (0.5 ponto)
