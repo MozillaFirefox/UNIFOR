@@ -277,8 +277,15 @@ A([INICIO]) --> B([FIM])
 
 ```
 1 ALGORITMO Media
-2
-FIM_ALGORITMO
+2 DECLARE: numero1,numero2,numero3,numero4: INTEIRO
+media:REAL
+3ESCREVA "Digite quatro números inteiros"
+4INICIO
+5LEIA numero1,numero2,numero3,numero4
+6 media*4 = numero1 + numero2 + numero3 + numero4
+7LEIA media
+8ESCREVA "Essa é a média"media 
+9FIM_ALGORITMO
 ```
 
 #### Teste de mesa (0.5 ponto)
