@@ -124,7 +124,7 @@ A([INICIO]) --> B([FIM])
 6 SE nota1 > 10 or nota1 <0 ENTAO
 7   ESCREVA"Nota inválida"
 8 SENAO
-9   ESCREVA nota2
+9   ESCREVA "Digite sua segunda nota" 
 10  LEIA nota2
 11  SE nota2 > 10 or nota2 <0 ENTAO
 12     ESCREVA"Nota inválida"
