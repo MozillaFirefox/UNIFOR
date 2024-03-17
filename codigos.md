@@ -379,7 +379,7 @@ G-->N
 10CASO "/" resultado = numero1 / numero2
 11FIM_ESCOLHA
 12ESCREVA "Resultado =" resultado
-FIM_ALGORITMO
+13FIM_ALGORITMO
 ```
 
 #### Teste de mesa (0.5 ponto)
@@ -402,8 +402,13 @@ A([INICIO]) --> B([FIM])
 #### Pseudocódigo (1.0 ponto)
 
 ```
-Algoritmo ClassificaCategoria
-FIM_ALGORITMO
+1ALGORITMO ClassificaCategoria
+2DECLARE idade:INTEIRO
+3ESCREVA:"Digite aqui a sua idade"
+4INICIO
+5ESCOLHA
+6
+6FIM_ALGORITMO
 ```
 
 #### Teste de mesa (0.5 ponto)
