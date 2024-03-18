@@ -595,11 +595,12 @@ I --> Z
 
 #### Teste de mesa (0.5 ponto)
 
-| Número | >= 0 |  | nome_coluna4 | nome_coluna5 | 
-|      --      |      --      |      --      |      --      |      --      | 
-| Adicione     | espaço       | se quiser    |  alinhar     | as barras    |
-| verticais,   | mas          | não é        | obrigatório. | Entendido ?  |
-
+| Número | >= 0 | resto ==0 | Saída |  
+|      --      |      --      |      --      |    -- | 
+| -1 |   F     |     | Digite um número positivo  |
+| 0   | T          | T        | O número é par |
+| 2     | T      | T    | O número é par |
+| 1  | T         | F    |  O número é ímpar |
 ### Exercício 02 (2.5 pontos)
 Faça um algoritmo que exiba na tela uma contagem de 0 até 30, exibindo apenas os múltiplos de 3.
 
