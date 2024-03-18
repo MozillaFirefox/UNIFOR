@@ -555,41 +555,47 @@ Atualize o algoritmo para determinar se um número inteiro e positivo é par ou 
 #### Fluxograma (1.0 ponto)
 
 ```mermaid
-flowchart TD
-A([INICIO]) --> B{{Digite um número: }}
-B --> C[\n\]
-C --> D[\num = 1\]
-D --> E{num <= n}
-E --FALSE--> I([FIM])
-E --TRUE--> F{{"Num", num}}
-F --> G[num =+ 1]
-G --LOOP--> E
+flowchart TD                                                 
+A([INICIO]) --> B{{Digite um número positivo!: }}              
+B --> C[\num\]
+C --> D{num >= 0}                                                     
+D--FALSE LOOP--> B                              
+D --TRUE--> F[resto = numero % 2]
+F --> G{resto == 0}
+G --FALSE--> H{{O número é impar!}}
+G --TRUE--> I{{O número é par!}}
+H --> Z([FIM])
+I --> Z
+
 ```
 
 #### Pseudocódigo (1.0 ponto)
 
 ```
-1  ALGORTIMO Classifica Categoria
-2  DECLARE numero, resto: INTEIRO
-3  ESCREVA "Digite um número: "
+1  ALGORTIMO Classifica Categoria          
+2  DECLARE num, resto: INTEIRO
+3  ESCREVA "Digite um número positivo!: "
 4  INICIO
-4  LEIA numero
-5  SE numero >= 0 ENTAO                  // verifica se o inteiro é positivo
-6    resto = numero % 2                 // calcula o resto da divisão por 2
-7    SE resto == 0 ENTAO                // verifica se o resto é igual a zero
-8      ESCREVA "O número é par!"
-9    SENAO
-10     ESCREVA "O número é impar!"
-11   FIM_SE
-11  SENAO                                // caso inteiro for negativo (condição linha 5)
-12    ESCREVA "O número deve ser postivo!"
-13  FIM_SE
-13 FIM
+4  LEIA num
+5  SE num >= 0
+6    resto = numero %2
+7   SE resto == 0
+8  ESCREVA "O número é ímpar"
+9   SENÃO
+10    ESCREVA"O número é par"
+12  FIM_SE
+13 SENAO
+14  ENQUANTO num < 0 FAÇA
+15  ESCREVA "Digite um número positivo!: "
+16  FIM_ENQUANTO
+17  FIM_SE
+18 FIM ALGORITMO
+
 ```
 
 #### Teste de mesa (0.5 ponto)
 
-| nome_coluna1 | nome_coluna2 | nome_coluna3 | nome_coluna4 | nome_coluna5 | 
+| Número | >= 0 |  | nome_coluna4 | nome_coluna5 | 
 |      --      |      --      |      --      |      --      |      --      | 
 | Adicione     | espaço       | se quiser    |  alinhar     | as barras    |
 | verticais,   | mas          | não é        | obrigatório. | Entendido ?  |
