@@ -559,7 +559,7 @@ flowchart TD
 A([INICIO]) --> B{{Digite um número positivo!: }}              
 B --> C[\num\]
 C --> D{num >= 0}                                                     
-D--FALSE LOOP--> B                              
+D--FALSE/LOOP--> B                              
 D --TRUE--> F[resto = numero % 2]
 F --> G{resto == 0}
 G --FALSE--> H{{O número é impar!}}
@@ -608,7 +608,22 @@ Faça um algoritmo que exiba na tela uma contagem de 0 até 30, exibindo apenas 
 
 ```mermaid
 flowchart TD
-A([INICIO]) --> B([FIM])
+flowchart TD
+A([INICIO]) --> B{{Digite um número: }}
+B --> C[\n\]
+C --> D[\num= 0\]
+D --> E[[i=0 ATÉ 30 PASSO 3]]
+E --> G([FIM])
+E --> F[num =+ i]
+F --LOOP--> E
+A([INICIO]) --> B{{Digite um número: }}
+B --> C[\n\]
+C --> D[\num = 1\]
+D --> E{num <= n}
+E --FALSE--> I([FIM])
+E --TRUE--> F{{"Num", num}}
+F --> G[num =+ 1]
+G --LOOP--> E
 ```
 
 #### Pseudocódigo (1.0 ponto)
