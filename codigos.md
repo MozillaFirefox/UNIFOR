@@ -556,7 +556,14 @@ Atualize o algoritmo para determinar se um número inteiro e positivo é par ou 
 
 ```mermaid
 flowchart TD
-A([INICIO]) --> B([FIM])
+A([INICIO]) --> B{{Digite um número: }}
+B --> C[\n\]
+C --> D[\num = 1\]
+D --> E{num <= n}
+E --FALSE--> I([FIM])
+E --TRUE--> F{{"Num", num}}
+F --> G[num =+ 1]
+G --LOOP--> E
 ```
 
 #### Pseudocódigo (1.0 ponto)
