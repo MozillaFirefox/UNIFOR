@@ -608,7 +608,7 @@ Faça um algoritmo que exiba na tela uma contagem de 0 até 30, exibindo apenas 
 
 ```mermaid
 flowchart TD
-flowchart TD
+
 A([INICIO]) --> B{{Digite um número: }}
 B --> C[\n\]
 C --> D[\num= 0\]
