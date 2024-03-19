@@ -608,37 +608,48 @@ Faça um algoritmo que exiba na tela uma contagem de 0 até 30, exibindo apenas 
 
 ```mermaid
 flowchart TD
-
-A([INICIO]) --> B{{Digite um número: }}
+A([INICIO]) --> B[n = 30]
 B --> C[\n\]
-C --> D[\num= 0\]
-D --> E[[i=0 ATÉ 30 PASSO 3]]
-E --> G([FIM])
-E --> F[num =+ i]
-F --LOOP--> E
-A([INICIO]) --> B{{Digite um número: }}
-B --> C[\n\]
-C --> D[\num = 1\]
-D --> E{num <= n}
+C --> D[\num = 0\]
+D --> E{num <= 30}
 E --FALSE--> I([FIM])
 E --TRUE--> F{{"Num", num}}
-F --> G[num =+ 1]
+F --> G[num =+ 3]
 G --LOOP--> E
 ```
 
 #### Pseudocódigo (1.0 ponto)
 
 ```
-Algoritmo ClassificaCategoria
-FIM_ALGORITMO
+1 ALGORITMO print_multiplos_de_3
+2 DECLARE n, num: INTEIRO
+3 INICIO
+4 ESCREVA n = 30
+4 LEIA n			// variável de entrada n
+4 num ← 0			// variável num inicializada
+5 ENQUANTO num <= n FAÇA	// n iterações
+7	ESCREVA “Número ”, num
+8	num ← num + 3		// num =+ 3 (incremento)
+8 FIM_ENQUANTO
+9 FIM
 ```
 
 #### Teste de mesa (0.5 ponto)
 
-| nome_coluna1 | nome_coluna2 | nome_coluna3 | nome_coluna4 | nome_coluna5 | 
-|      --      |      --      |      --      |      --      |      --      | 
-| Adicione     | espaço       | se quiser    |  alinhar     | as barras    |
-| verticais,   | mas          | não é        | obrigatório. | Entendido ?  |
+| it | n  | num | num <= n | Saída      | num =+ 3 |
+| -- | -- | --  | --       | --         | --       |
+| 1  | 30 | 0   | True     | Número 1   | 3        |
+| 2  | 30 | 3   | True     | Número 2   | 6        |
+| 3  | 30 | 6   | True     | Número 3   | 9        |
+| 4  | 30 | 9   | True     | Número 4   | 12        |
+| 5  | 30 | 12   | True     | Número 5   | 15        |
+| 6  | 30 | 15   | True     | Número 6   | 18        |
+| 7  | 30 | 18   | True     | Número 7   | 21        |
+| 8  | 30 | 21   | True     | Número 8   | 24        |
+| 9  | 30 | 24   | True     | Número 9   | 27       |
+| 10 | 30 | 27  | True     | Número 10  | 30       |
+| 11 | 30 | 30  | True   | Número 11    | 33       |
+| 12 | 30 | 33  | False   |      --      |    --      |
 
 ### Exercício 03 (2.5 pontos)
 Dada uma sequência de números inteiros, calcular a sua soma. 
