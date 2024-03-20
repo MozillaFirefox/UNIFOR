@@ -666,7 +666,7 @@ D-->H[[i DE 1 ATÉ x PASSO 1]]
 H--F-->E[LEIA ni ATÉ nn]
 E-->J[soma =+ ni]
 J-->H
-H--T-->W([FIM])
+H--T-->W{{A soma é soma}}
 
 
 
