@@ -669,8 +669,9 @@ E-->G[LEIA ni ATÉ nx]
 G-->H[[i DE 1 ATÉ x PASSO 1]]
 H-->J[ soma =+ ni]
 J-LOOP->H
-H-->K{{ soma}}
-K-->L([FIM])
+H-->K{{soma}}
+K-->L[FIM]
+L-->([FIM])
 
 
 
