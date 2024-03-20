@@ -659,8 +659,8 @@ Por exemplo, para a sequência {12, 17, 4, -6, 8, 0}, o seu programa deve escrev
 
 ```mermaid
 flowchart TD
-A([INICIO]) --> B{{Digite aos números}}
-B-->C[\nz\]
+A([INICIO]) --> B{{Digite a quantidade de números}}
+B-->C[\n\]
 C-->D
 
 ```
@@ -669,31 +669,36 @@ C-->D
 
 ```
 1 ALGORITMO Soma_os_números
-2 DECLARE n,i,soma:INTEIRO
+2 DECLARE n,i,x,soma:INTEIRO
 3 ESCREVA "Digite a quantidade de números"
 4 INICIO
 5 LEIA [\n\]
-6 SE n = x ENTAO
-7 LEIA n1,n2,n3,...,nx
+6 SE n = x ENTAO 
 8 ESCREVA "Digite quais são os números"
-9 SENAO n = x
-10 LEIA n1,n2,n3,...,nx
-11FIM_SE 
-12 [\soma = 0\]
-13 PARA i DE 1 ATÉ n PASSO 1 FAÇA
-14 soma ← soma + ni
-15 FIM_PARA
-16 LEIA soma
-17 ESCREVA "A soma é soma"
-FIM_ALGORITMO
+9 LEIA n1,n2,n3,...,nx
+10 SENAO n = x
+11 ESCREVA "Digite quais são os números"
+12 LEIA n1,n2,n3,...,nx
+13 FIM_SE 
+14 PARA i DE 0 ATÉ x PASSO 1 FAÇA
+15 soma ← soma + ni
+16 FIM_PARA
+17 LEIA soma
+18 ESCREVA "A soma é soma"
+19 FIM_ALGORITMO
 ```
 
 #### Teste de mesa (0.5 ponto)
 
-| nome_coluna1 | nome_coluna2 | nome_coluna3 | nome_coluna4 | nome_coluna5 | 
+| iteração | i | saída | x | números | 
 |      --      |      --      |      --      |      --      |      --      | 
-| Adicione     | espaço       | se quiser    |  alinhar     | as barras    |
-| verticais,   | mas          | não é        | obrigatório. | Entendido ?  |
+|      0      |      0      |      A soma é 0      |      6      | 12, 17, 4, -6, 8, 0 | 
+|      1      |      1      |      A soma é 12      |      6      |     17,4,-6,8,0       | 
+|      2      |      2      |      A soma é 29     |      6      |   4,-6,8,0         | 
+|      3      |      3      |      A soma é 33     |      6      |     -6,8,0      | 
+|      4      |      4      |      A soma é  27    |      6      |    8,0        | 
+|      5      |      5      |      A soma é  35    |      6      |     0        | 
+
 
 ### Exercício 04 (2.5 pontos)
 Escreva um programa que leia a nota de diversos alunos, até que seja digitada uma nota negativa. 
