@@ -614,7 +614,7 @@ C --> D[\num = 0\]
 D --> E{num <= 30}
 E --FALSE--> I([FIM])
 E --TRUE--> F{{"Num", num}}
-F --> G[num =+ 3]
+F --> G[[num =+ 3]]
 G --LOOP--> E
 ```
 
@@ -625,11 +625,11 @@ G --LOOP--> E
 2 DECLARE n, num: INTEIRO
 3 INICIO
 4 ESCREVA n = 30
-4 LEIA n			// variável de entrada n
-4 num ← 0			// variável num inicializada
-5 ENQUANTO num <= n FAÇA	// n iterações
+4 LEIA n			
+4 num ← 0			
+5 ENQUANTO num <= n FAÇA	
 7	ESCREVA “Número ”, num
-8	num ← num + 3		// num =+ 3 (incremento)
+8	num ← num + 3		
 8 FIM_ENQUANTO
 9 FIM
 ```
@@ -659,13 +659,32 @@ Por exemplo, para a sequência {12, 17, 4, -6, 8, 0}, o seu programa deve escrev
 
 ```mermaid
 flowchart TD
-A([INICIO]) --> B([FIM])
+A([INICIO]) --> B{{Digite aos números}}
+B-->C[\nz\]
+C-->D
+
 ```
 
 #### Pseudocódigo (1.0 ponto)
 
 ```
-Algoritmo ClassificaCategoria
+1 ALGORITMO Soma_os_números
+2 DECLARE n,i,soma:INTEIRO
+3 ESCREVA "Digite a quantidade de números"
+4 INICIO
+5 LEIA [\n\]
+6 SE n = x ENTAO
+7 LEIA n1,n2,n3,...,nx
+8 ESCREVA "Digite quais são os números"
+9 SENAO n = x
+10 LEIA n1,n2,n3,...,nx
+11FIM_SE 
+12 [\soma = 0\]
+13 PARA i DE 1 ATÉ n PASSO 1 FAÇA
+14 soma ← soma + ni
+15 FIM_PARA
+16 LEIA soma
+17 ESCREVA "A soma é soma"
 FIM_ALGORITMO
 ```
 
