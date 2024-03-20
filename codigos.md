@@ -666,13 +666,13 @@ D--T-->E{{"Quais são os números}}
 D--F-->F[n = x]
 F-->E
 E-->G[LEIA ni ATÉ nx]
-G-->H[[i DE 1 ATÉ x PASSO 1]]
+G-->H[i DE 1 ATÉ x PASSO 1]
 H-->J[ soma =+ ni]
-J-LOOP->H
+J-LOOP->G
 H-->K{soma = n1 + n2 + n3 + ... + nx}
 K--T-->L{{A soma é soma}}
 K--F-->J
-L-->M[FIM]
+L-->M([FIM])
 
 
 
