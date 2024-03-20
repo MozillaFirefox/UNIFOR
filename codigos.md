@@ -661,7 +661,18 @@ Por exemplo, para a sequência {12, 17, 4, -6, 8, 0}, o seu programa deve escrev
 flowchart TD
 A([INICIO]) --> B{{Digite a quantidade de números}}
 B-->C[\n\]
-C-->D
+C-->D{n = x}
+D--T-->E{{"Quais são os números}}
+D--F-->F[n = x]
+F-->E
+E-->G[LEIA ni ATÉ nx]
+G-->H[[i DE 1 ATÉ x PASSO 1]]
+H-->J[ soma =+ ni]
+J-LOOP->H
+H-->K{{A soma é soma}}
+K-->L([FIM])
+
+
 
 ```
 
