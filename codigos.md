@@ -668,7 +668,11 @@ F-->E
 E-->G[LEIA ni ATÉ nx]
 G-->H[[i DE 1 ATÉ x PASSO 1]]
 H-->J[ soma =+ ni]
-J-LOOP->H([FIM])
+J-LOOP->H
+H-->K{soma = n1 + n2 + n3 + ... + nx}
+K--T-->L{{A soma é soma}}
+K--F-->J
+L-->([FIM])
 
 
 
