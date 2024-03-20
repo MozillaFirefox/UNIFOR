@@ -661,18 +661,12 @@ Por exemplo, para a sequência {12, 17, 4, -6, 8, 0}, o seu programa deve escrev
 flowchart TD
 A([INICIO]) --> B{{Digite a quantidade de números}}
 B-->C[\n\]
-C-->D{n = x}
-D--T-->E{{"Quais são os números}}
-D--F-->F[n = x]
-F-->E
-E-->G[LEIA ni ATÉ nx]
-G-->H[i DE 1 ATÉ x PASSO 1]
-H-->J[ soma =+ ni]
-J-LOOP->G
-H-->K{soma = n1 + n2 + n3 + ... + nx}
-K--T-->L{{A soma é soma}}
-K--F-->J
-L-->M([FIM])
+C-->D{{"Quais são os números}}
+D-->H[i DE 1 ATÉ x PASSO 1]
+H-->E[LEIA ni ATÉ nn]
+E-->J[soma =+ ni]
+J-->H
+H-->([FIM])
 
 
 
@@ -684,30 +678,25 @@ L-->M([FIM])
 
 ```
 1 ALGORITMO Soma_os_números
-2 DECLARE n,i,x,soma:INTEIRO
+2 DECLARE n,i,soma:INTEIRO
 3 ESCREVA "Digite a quantidade de números"
 4 INICIO
-5 LEIA [\n\]
-6 SE n = x ENTAO 
-8 ESCREVA "Digite quais são os números"
-9 LEIA n1,n2,n3,...,nx
-10 SENAO n = x
-11 ESCREVA "Digite quais são os números"
-12 LEIA n1,n2,n3,...,nx
-13 FIM_SE 
-14 PARA i DE 0 ATÉ x PASSO 1 FAÇA
-15 soma ← soma + ni
-16 FIM_PARA
-17 LEIA soma
-18 ESCREVA "A soma é soma"
-19 FIM_ALGORITMO
+5 LEIA [\n\] 
+6 ESCREVA "Digite quais são os números"
+7 LEIA n1,n2,n3,...,nn
+8 PARA i DE 1 ATÉ x PASSO 1 FAÇA 
+9 soma ← soma + ni
+10 FIM_PARA
+11 LEIA soma
+12 ESCREVA "A soma é soma"
+13 FIM_ALGORITMO
 ```
 
 #### Teste de mesa (0.5 ponto)
 
 | iteração | i | saída | x | números | 
 |      --      |      --      |      --      |      --      |      --      | 
-|      0      |      0      |      A soma é 0      |      6      | 12, 17, 4, -6, 8, 0 | 
+|      0      |      1      |      A soma é 0      |      6      | 12, 17, 4, -6, 8, 0 | 
 |      1      |      1      |      A soma é 12      |      6      |     17,4,-6,8,0       | 
 |      2      |      2      |      A soma é 29     |      6      |   4,-6,8,0         | 
 |      3      |      3      |      A soma é 33     |      6      |     -6,8,0      | 
