@@ -677,13 +677,11 @@ F-->G([FIM])
 ```
 1 ALGORITMO Soma_os_números
 2 DECLARE n,i,soma:INTEIRO
-3 ESCREVA "Digite a quantidade de números"
+3 ESCREVA "Digite os números"
 4 INICIO
 5 LEIA [\n\] 
-6 ESCREVA "Digite quais são os números"
-7 LEIA n1,n2,n3,...,nn
-8 PARA i DE 1 ATÉ x PASSO 1 FAÇA 
-9 soma ← soma + ni
+6 PARA i DE 1 ATÉ n PASSO 1 FAÇA 
+9 soma ← soma + n
 10 FIM_PARA
 11 LEIA soma
 12 ESCREVA "A soma é soma"
@@ -692,14 +690,14 @@ F-->G([FIM])
 
 #### Teste de mesa (0.5 ponto)
 
-| iteração | i | saída | x | números | 
+| iteração | i | saída | n |  
 |      --      |      --      |      --      |      --      |      --      | 
-|      0      |      1      |      A soma é 0      |      6      | 12, 17, 4, -6, 8, 0 | 
-|      1      |      1      |      A soma é 12      |      6      |     17,4,-6,8,0       | 
-|      2      |      2      |      A soma é 29     |      6      |   4,-6,8,0         | 
-|      3      |      3      |      A soma é 33     |      6      |     -6,8,0      | 
-|      4      |      4      |      A soma é  27    |      6      |    8,0        | 
-|      5      |      5      |      A soma é  35    |      6      |     0        | 
+|      0      |      1      |      A soma é 0      |          12, 17, 4, -6, 8, 0 | 
+|      1      |      1      |      A soma é 12      |                 17,4,-6,8,0       | 
+|      2      |      2      |      A soma é 29     |              4,-6,8,0         | 
+|      3      |      3      |      A soma é 33     |                -6,8,0      | 
+|      4      |      4      |      A soma é  27    |              8,0        | 
+|      5      |      5      |      A soma é  35    |                 0        | 
 
 
 ### Exercício 04 (2.5 pontos)
