@@ -662,11 +662,11 @@ flowchart TD
 A([INICIO]) --> B{{Digite a quantidade de números}}
 B-->C[\n\]
 C-->D{{"Quais são os números}}
-D-->H[i DE 1 ATÉ x PASSO 1]
-H-->E[LEIA ni ATÉ nn]
+D-->H[[i DE 1 ATÉ x PASSO 1]]
+H--F-->E[LEIA ni ATÉ nn]
 E-->J[soma =+ ni]
 J-->H
-H-->([FIM])
+H--T-->W([FIM])
 
 
 
