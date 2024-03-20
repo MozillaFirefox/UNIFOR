@@ -659,14 +659,12 @@ Por exemplo, para a sequência {12, 17, 4, -6, 8, 0}, o seu programa deve escrev
 
 ```mermaid
 flowchart TD
-A([INICIO]) --> B{{Digite a quantidade de números}}
+A([INICIO]) --> B{{Digite os números}}
 B-->C[\n\]
-C-->D{{"Quais são os números}}
-D-->H[[i DE 1 ATÉ x PASSO 1]]
-H--F-->E[LEIA ni ATÉ nn]
-E-->J[soma =+ ni]
-J-->H
-H--T-->W{{A soma é soma}}
+C-->D[[ i de 1 ATÉ n PASSO 1]]
+D-->E[soma =+ n]
+E-->F{{A soma é soma}}
+F-->G([FIM])
 
 
 
