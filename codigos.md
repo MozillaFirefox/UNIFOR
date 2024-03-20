@@ -663,7 +663,7 @@ A([INICIO]) --> B{{Digite os números}}
 B-->C[\n,x\]
 C-->D[[ i de 1 ATÉ x PASSO 1]]  
 D-->E[soma =+ n]
-E-->H{i = n}
+E-->H{i = x}
 H--T-->F{{A soma é soma}}
 H--F-->E
 F-->G([FIM])
