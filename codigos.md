@@ -660,8 +660,8 @@ Por exemplo, para a sequência {12, 17, 4, -6, 8, 0}, o seu programa deve escrev
 ```mermaid
 flowchart TD
 A([INICIO]) --> B{{Digite os números}}
-B-->C[\n\]
-C-->D[[ i de 1 ATÉ n PASSO 1]]
+B-->C[\n,x\]
+C-->D[[ i de 1 ATÉ x PASSO 1]]  
 D-->E[soma =+ n]
 E-->H{i = n}
 H--T-->F{{A soma é soma}}
@@ -678,11 +678,11 @@ F-->G([FIM])
 
 ```
 1 ALGORITMO Soma_os_números
-2 DECLARE n,i,soma:INTEIRO
+2 DECLARE n,i,x,soma:INTEIRO
 3 ESCREVA "Digite os números"
 4 INICIO
-5 LEIA [\n\] 
-6 PARA i DE 1 ATÉ n PASSO 1 FAÇA 
+5 LEIA [\n,x\] // n são os números e x é a quantidade de números.
+6 PARA i DE 1 ATÉ x PASSO 1 FAÇA 
 9 soma ← soma + n
 10 FIM_PARA
 11 LEIA soma
