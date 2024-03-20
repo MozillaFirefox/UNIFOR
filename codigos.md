@@ -712,7 +712,14 @@ Ex. Foram lidas 14 notas. A média aritmética é 6.75!
 
 ```mermaid
 flowchart TD
-A([INICIO]) --> B([FIM])
+A([INICIO]) --> B{{Digite as notas}}
+B-->C[\n,x\]
+C-->D[[ i de 1 ATÉ x PASSO 1]]  
+D-->E[soma =+ n]
+E-->H{i = x}
+H--T-->F{{A soma é soma}}
+H--F-->E
+F-->G([FIM])
 ```
 
 #### Pseudocódigo (1.0 ponto)
