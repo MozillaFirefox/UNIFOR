@@ -672,7 +672,7 @@ J-LOOP->H
 H-->K{soma = n1 + n2 + n3 + ... + nx}
 K--T-->L{{A soma é soma}}
 K--F-->J
-L-->([FIM])
+L-->M([FIM])
 
 
 
