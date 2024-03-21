@@ -1086,7 +1086,19 @@ I --LOOP--> E
 ```
 Algoritmo SomaSerie
 INICIO
-...
+ESCREVA "Digite o número de termos da série S:"
+LEIA n
+S = 0
+PARA i DE 0 ATÉ n PASSO 1
+SE i > n
+ESCREVA "Soma da série S é ", S
+FIM_PARA
+SE i=0,1,2,..,n
+numerador = 2 * i + 1
+denominador = 2 * i + 2
+termo = numerador / denominador
+S += termo
+LOOP --> PARA i DE 0 ATÉ n PASSO 1
 FIM
 ```
 
@@ -1134,6 +1146,7 @@ H --> I
 ```
 Algoritmo CalcFatorial
 INICIO
+ESCREVA "Digite um numero inteiro nao-negativo:"
 ...
 FIM
 ```
