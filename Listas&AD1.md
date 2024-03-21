@@ -1137,7 +1137,7 @@ J --> I([FIM])
 E --> F[[i=1 ATÉ n PASSO 1]]
 F --"i > n"--> H{{O fatorial de, n, é:, fator}}
 F --"i=1,2,..n"--> G[fator = fator * i]
-G --LOOP--> F
+G --LOOP--> F 
 H --> I
 ```
 
@@ -1147,6 +1147,20 @@ H --> I
 Algoritmo CalcFatorial
 INICIO
 ESCREVA "Digite um numero inteiro nao-negativo:"
+LEIA n
+SE fator = 1 ENTAO
+PARA i de 1 ATÉ n PASSO 1 FAÇA
+   SE i > n
+   ESCREVA O fatorial de, n, é:, fator
+   SENAO i=1,2,..n
+   fator = fator * i
+   LOOP PARA i de 1 ATÉ n PASSO 1 FAÇA
+   FIM_SE
+SENAO
+ESCREVA "O valor deve ser maior ou igual a zero!"
+FIM_SE
+FIM
+
 ...
 FIM
 ```
