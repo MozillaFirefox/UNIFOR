@@ -720,10 +720,7 @@ C-->D[i <- 1]
 D-->E{i != x}
 E--T-->H[soma =+ ni,i =+1]
 E--F-->G[ soma = media * x-1]
-H-->J{nx < 0}
-J--T-->K[soma - nx]
-K-->G
-J--F/LOOP-->E
+H--LOOP-->D
 G-->M[\media, x-1, soma\]
 M-->N{{Foram lidas x-1 notas e a média aritmética é media}}
 N-->O([FIM])
@@ -741,8 +738,15 @@ LEIA n // as notas
  x = i + y do n negativo
  y c Inteiros
  i <- 1
-ENQUANTO i != x FAÇA
+ENQUANTO i != x  FAÇA
 soma =+ni e i=+1
+FIM_ENQUANTO
+SE i = x ENTÃO
+soma = media*x-1
+FIM_SE
+LEIA media,soma,x-1
+ESCREVA Foram lidas x-1 notas e a média aritmética é media
+FIM
 
 
  
