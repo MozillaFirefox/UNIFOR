@@ -1021,10 +1021,15 @@ SE i <= n ENTAO
 ESCREVA "Digite um número:"
 LEIA num
 soma =+num
-
+i =+ 1
+LOOP "Digite um número:"
+SENAO
+ESCREVA "A soma dos numeros é , soma"
+FIM_SE
 SENAO n < 0 ENTAO
 ESCREVA "O valor deve ser maior ou igual a zero!"
 FIM_SE
+FIM
 
 
 ...
