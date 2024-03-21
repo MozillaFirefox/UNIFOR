@@ -713,19 +713,39 @@ Ex. Foram lidas 14 notas. A média aritmética é 6.75!
 ```mermaid
 flowchart TD
 A([INICIO]) --> B{{Digite as notas}}
-B-->C[\n,x\]
-C-->D[[ i de 1 ATÉ x PASSO 1]]  
-D-->E[soma =+ n]
-E-->H{i = x}
-H--T-->F{{A soma é soma}}
-H--F-->E
-F-->G([FIM])
+B-->C[\n\]
+B-->X[ x = i+y do número negativo]
+X-->Z[ y = any positive integral number]
+C-->D[i <- 1]
+D-->E{i != x}
+E--T-->H[soma =+ ni,i =+1]
+E--F-->G[ soma = media * x-1]
+H-->J{nx < 0}
+J--T-->K[soma - nx]
+K-->G
+J--F/LOOP-->E
+G-->M[\media, x-1, soma\]
+M-->N{{Foram lidas x-1 notas e a média aritmética é media}}
+N-->O([FIM])
+
 ```
 
 #### Pseudocódigo (1.0 ponto)
 
 ```
-Algoritmo ClassificaCategoria
+ALGORITMO ClassificaCategoria
+DECLARE x,i,y:INTEIROS media, soma, n:REAL
+ESCREVA"Digite as notas"
+INICIO
+LEIA n // as notas
+ x = i + y do n negativo
+ y c Inteiros
+ i <- 1
+ENQUANTO i != x FAÇA
+soma =+ni e i=+1
+
+
+ 
 FIM_ALGORITMO
 ```
 
