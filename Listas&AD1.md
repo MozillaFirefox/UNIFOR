@@ -1014,10 +1014,19 @@ Algoritmo SomaNumeros
 INICIO
 ESCREVA "Digite a quantidade de números<br> (n >= 0):"
 LEIA n
-CASO n >= 0 ENTAO
+SE n >= 0 ENTAO
 soma = 0
-CASO n < o ENTAO
+i = 1
+SE i <= n ENTAO
+ESCREVA "Digite um número:"
+LEIA num
+soma =+num
+
+SENAO n < 0 ENTAO
 ESCREVA "O valor deve ser maior ou igual a zero!"
+FIM_SE
+
+
 ...
 FIM
 ```
