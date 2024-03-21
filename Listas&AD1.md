@@ -1209,8 +1209,22 @@ I --LOOP--> E
 ```
 Algoritmo GeraFibonacci
 INICIO
-...
+ESCREVA "Número de termos da série Fibonacci:"
+a = 0
+b = 1
+PARA i de 1 ATÉ n PASSO 1
+SE i > n ENTAO
 FIM
+FIM_SE
+SE i=1,2,...,n ENTAO
+ESCREVA a
+FIM_SE
+termo_atual = a + b
+a = b
+b = termo_atual
+LOOP -> SE i > n  ou SE i=1,2,...,n
+FIM
+
 ```
 #### Teste de mesa
 
@@ -1260,7 +1274,21 @@ E --> W
 ```
 Algoritmo InverteInteiro
 INICIO
-...
+ESCREVA "Digite um número inteiro:"
+LEIA num
+SE num >= 0 ENTAO
+num_inv = 0
+    SE num > 0 ENTAO
+    digito = num % 10
+    num_inv = num_inv * 10 + digito
+    numero = numero // 10
+    LOOP -> digito = num % 10 ou
+    ESCREVA "Número invertido:", numero_inv
+    SENAO escreva ""Número invertido:", numero_inv"
+    FIM_SE
+SENAO
+ ESCREVA "O número deve ser positivo!"
+FIM_SE
 FIM
 ```
 
