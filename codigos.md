@@ -720,7 +720,7 @@ C-->D[i <- 1]
 D-->E{i != x}
 E--T-->H[soma =+ ni,i =+1]
 E--F-->G[ soma = media * x-1]
-H--LOOP-->D
+H--LOOP-->E
 G-->M[\media, x-1, soma\]
 M-->N{{Foram lidas x-1 notas e a média aritmética é media}}
 N-->O([FIM])
@@ -730,23 +730,23 @@ N-->O([FIM])
 #### Pseudocódigo (1.0 ponto)
 
 ```
-ALGORITMO ClassificaCategoria
-DECLARE x,i,y:INTEIROS media, soma, n:REAL
-ESCREVA"Digite as notas"
-INICIO
-LEIA n // as notas
- x = i + y do n negativo
- y c Inteiros
- i <- 1
-ENQUANTO i != x  FAÇA
-soma =+ni e i=+1
-FIM_ENQUANTO
-SE i = x ENTÃO
-soma = media*x-1
-FIM_SE
-LEIA media,soma,x-1
-ESCREVA Foram lidas x-1 notas e a média aritmética é media
-FIM
+1ALGORITMO ClassificaCategoria
+2DECLARE x,i,y:INTEIROS media, soma, n:REAL
+3ESCREVA"Digite as notas"
+4INICIO
+5LEIA n // as notas
+6 x = i + y do n negativo
+7 y c Inteiros
+8 i <- 1
+9ENQUANTO i != x  FAÇA
+10soma =+ni e i=+1
+11FIM_ENQUANTO
+12SE i = x ENTÃO
+13soma - nx = media*(x-1)
+14FIM_SE
+15LEIA media,soma,x-1
+16ESCREVA Foram lidas x-1 notas e a média aritmética é media
+17FIM
 
 
  
@@ -755,10 +755,10 @@ FIM_ALGORITMO
 
 #### Teste de mesa (0.5 ponto)
 
-| nome_coluna1 | nome_coluna2 | nome_coluna3 | nome_coluna4 | nome_coluna5 | 
-|      --      |      --      |      --      |      --      |      --      | 
-| Adicione     | espaço       | se quiser    |  alinhar     | as barras    |
-| verticais,   | mas          | não é        | obrigatório. | Entendido ?  |
+| notas | média | x |  soma | nx | saída |
+|      --      |      --      |      --      |      --      |      --      |  -- |
+| 10, 9,8,7.5, -30   |   8.625     | 5    |  4.5     | -30    | Foram lidas 4 notas e a média aritmética foi 8.625|
+| 10, 8, 7 ,4,5,-2   |    6.75       | 6        | 32  | -2 | Foram lidas 5 notas e a média aritmética foi 8.625|   
 
 
 
