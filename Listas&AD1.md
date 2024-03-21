@@ -765,16 +765,16 @@ FIM_ALGORITMO
 
 <img src="https://drive.google.com/uc?id=1SOzRTjUt7cuBJpSqoK90fcAiKBrnpUJo" width="400">
 
-**Curso:** preencha com seus dados <br>
-**Disciplina:** preencha com seus dados <br>
-**Código/Turma:** preencha com seus dados <br>
+**Curso:** Ciências da Computação
+**Disciplina:** Raciocínio Lógico algoritmico
+**Código/Turma:** T160-60
 **Professor:** Ricardo Carubbi <br>
-**Data:** preencha com a data de envio <br>
-**Aluno(a):** preencha com seus dados <br>
-**Matrícula:** preencha com seus dados <br>
+**Data:** 21/03/24
+**Aluno(a):** Aaron Magno Campos Nogueira
+**Matrícula:** 2413085
 
-**1a chamada (Sim/Não):** preencha com a opção correta <br>
-**2a chamada (Sim/Não):** preencha com a opção correta
+**1a chamada (Sim/Não):** Sim
+**2a chamada (Sim/Não):** Não
 
 # Avaliação Diagnóstica 1
 
@@ -838,7 +838,15 @@ I --> J{{"b =", b}}
 ```
 Algoritmo TrocaValores
 INICIO
-...
+ESCREVA "Digite o valor de a:"
+LEIA a
+ESCREVA"Digite o valor d b:"
+LEIA b
+aux = a
+a = b
+b = aux
+ESCREVA ""a =" a"
+ESCREVA ""b ="b"
 FIM
 ```
 
@@ -885,6 +893,25 @@ K --LOOP--> F
 
 #### Fluxograma 02
 Fluxograma opcional usando o loop PARA.
+ALGORITMO Loop_enquanto
+INICIO
+ESCREVA "Digite o número de alunos:"
+LEIA n
+LEIA cont = 0
+LEIA i = 1
+SE i <= n ENTÃO
+ESCREVA "Digite a nota do aluno" i
+SENAO 
+ESCREVA "Número de alunos aprovados"cont
+FIM_SE
+LEIA nota
+ENQUANTO nota >= 50 <br>E <br>nota <=100 FAÇA
+cont=+1 
+i =+1
+LOOP ESCREVA "Digite a nota do aluno" i
+FIM_ENQUANTO
+FIM
+
 
 ```mermaid
 flowchart TD
@@ -906,8 +933,23 @@ J --LOOP--> E
 
 ```
 Algoritmo ContaAprovacoes
+ALGORITMO Loop_enquanto
 INICIO
-...
+ESCREVA "Digite o número de alunos:"
+LEIA n
+LEIA cont = 0
+LEIA i = 1
+SE i <= n ENTÃO
+ESCREVA "Digite a nota do aluno" i
+SENAO 
+ESCREVA "Número de alunos aprovados"cont
+FIM_SE
+LEIA nota
+ENQUANTO nota >= 50 <br>E <br>nota <=100 FAÇA
+cont=+1 
+i =+1
+LOOP ESCREVA "Digite a nota do aluno" i
+FIM_ENQUANTO
 FIM
 ```
 
@@ -970,6 +1012,12 @@ K --LOOP--> G
 ```
 Algoritmo SomaNumeros
 INICIO
+ESCREVA "Digite a quantidade de números<br> (n >= 0):"
+LEIA n
+CASO n >= 0 ENTAO
+soma = 0
+CASO n < o ENTAO
+ESCREVA "O valor deve ser maior ou igual a zero!"
 ...
 FIM
 ```
