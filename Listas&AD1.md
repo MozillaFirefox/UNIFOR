@@ -716,6 +716,7 @@ A([INICIO]) --> B{{Digite as notas}}
 B-->C[\n\]
 B-->X[ x = i+y do número negativo]
 X-->Z[ y = any positive integral number]
+Z-->D
 C-->D[i <- 1]
 D-->E{i != x}
 E--T-->H[soma =+ ni,i =+1]
