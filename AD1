@@ -537,7 +537,7 @@ INICIO
     b <- 1
 
     // Insira seu comentário
-    PARA i DE 1 ATE n FAÇA
+    PARA i DE 1 ATE n PASSO 1 FAÇA
 
         // Insira seu comentário
         ESCREVA a
