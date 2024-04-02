@@ -232,30 +232,30 @@ DECLARE idade, anos_apto: INTEIRO
 
 INICIO
 
-    // Insira seu comentário
+    // Exibe a mensagem para entrada de dados
     ESCREVA ""Digite a sua idade:"
 
-    // Insira seu comentário
+    // Dado de entrada armazenado na variável idade 
     LEIA idade
 
-    // Insira seu comentário
+    //  Executa a instrução sob a condição "idade <= 0" é verdadeira
     SE idade < 0 ENTAO
         ESCREVA "A idade deve ser maior que zero!"
 
-    // Insira seu comentário
+    // Executa as instruções sob a condição "idade <= 0" é falso
     SENAO
 
-        // Insira seu comentário
+        // Executa a instrução de exibir "O candidato está apto a tirar a CNH!" sob a condição "idade >= 18" é verdadeira
         SE idade >= 18 ENTAO
             ESCREVA "O candidato está apto a tirar a CNH!"
 
-        // Insira seu comentário
+        // Executa as instruções sob a condição "idade >= 18" é falso
         SENAO
 
-            // Insira seu comentário
+            // O valor 18 - idade é atribuido à variável anos_apto
             anos_apto <- 18 - idade
 
-            // Insira seu comentário
+            // Exibe a mensagem de quantos anos faltam para o candidato estar apto  .
             ESCREVA "Faltam", anos_apto, "ano(s) para o candidato estar apto!"
 
         FIM_SE
