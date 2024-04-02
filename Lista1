@@ -156,29 +156,30 @@ DECLARE nota1, nota2, media: REAL
 
 INICIO
 
-    // 
+    // Exibe a mensagem de entrada para o valor da variável nota1
     ESCREVA "Digite a nota 1:"
 
-    // Insira seu comentário
+    // Dado de entrada armazenado na variável nota1
     LEIA nota1
 
-    // Insira seu comentário
+    // Exibe a mensagem de entrada para o valor da variável nota2
     ESCREVA "Digite a nota 2:"
 
-    // Insira seu comentário
+    // Dado de entrada armazenado na variável nota2
     LEIA nota2
 
-    // Insira seu comentário
+    // Executa as instruções sob a condição "nota1 >= 0 E nota2 >= 0" é verdadeira
     SE nota1 >= 0 E nota2 >= 0 ENTAO
 
-        // Insira seu comentário
+        // O valor de (nota1 + nota2)/2 é atribuido na variável "média"
+
         media =  (nota1 + nota2)/2
 
-        // Insira seu comentário
+        //   Executa as instruções sob a condição "media >= 7" for verdadeira
         SE media >= 7 ENTAO
             ESCREVA "O aluno está aprovado!"
 
-        // Insira seu comentário
+        // 
         SENAO
             "O aluno está reprovado!"
 
