@@ -27,6 +27,7 @@ ALGORITMO calReajuste
 DECLARE  sal, sal_reaj: real, prof: caractere
 
 INICIO
+    //Exibe mensagem para entrada de dados
     ESCREVA "Digite o salário e profissão"
     // Dados de entrada armazenado nas variável sal e prof
     LEIA sal, prof
