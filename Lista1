@@ -31,29 +31,29 @@ DECLARE numero, resto: INTEIRO
 
 INICIO
 
-    // Insira seu comentário
+    // Entrada do usuário de um número inteiro qualquer armezando na variável "numero"
     ESCREVA "Digite um número: "
     
-    // Insira seu comentário
+    // Dado de entrada armazenado na variável numero
     LEIA numero
     
-    // Insira seu comentário
+    //Executa as instruções sob a condição "numero >= 0" for verdadeira
     SE numero >= 0 ENTAO
 
-        // Insira seu comentário
+        // O resto da divisão por 2 da variável 'numero' é atribuido na variável "resto"
         resto <- numero % 2
 
-        // Insira seu comentário
+        // Executa a instrução de exibir "O número é par" sob a condição "resto == 0" é verdadeira
         SE resto == 0 ENTAO
             ESCREVA "O número é par!"
 
-        // Insira seu comentário
+        //Executa a instrução de exibir "O número é ímpar" sob a condição "resto == 0" é falsa
         SENAO
           ESCREVA "O número é impar!"
 
         FIM_SE
 
-    // Insira seu comentário
+    //Executa a instrução de exibir "O número deve ser positivo" sob a condição "numero >= 0" é falsa
     SENAO             
         ESCREVA "O número deve ser postivo!"
 
@@ -96,7 +96,7 @@ DECLARE sal_atual, sal_reaj: REAL
 
 INICIO
 
-    // Insira seu comentário
+    //  Entrada do usuário de um número inteiro qualquer armezando na variável "numero"
     ESCREVA "Digite seu salário atual:"
 
     // Insira seu comentário
