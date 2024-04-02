@@ -175,17 +175,17 @@ INICIO
 
         media =  (nota1 + nota2)/2
 
-        //   Executa as instruções sob a condição "media >= 7" for verdadeira
+        //   Executa as instruções sob a condição "media >= 7" é verdadeira
         SE media >= 7 ENTAO
             ESCREVA "O aluno está aprovado!"
 
-        // 
+        // Executa as instruções sob a condição "media >= 7" é falsa
         SENAO
-            "O aluno está reprovado!"
+          ESCREVA  "O aluno está reprovado!"
 
         FIM_SE
 
-    // Insira seu comentário
+    //  Executa as instruções sob a condição "nota1 >= 0 E nota2 >= 0" é falsa
     SENAO
         ESCREVA "A nota deve ser maior que zero!"
 
