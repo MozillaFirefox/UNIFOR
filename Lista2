@@ -27,28 +27,28 @@ ALGORITMO calReajuste
 DECLARE  sal, sal_reaj: real, prof: caractere
 
 INICIO
-
-    // Insira seu comentário
+    ESCREVA "Digite o salário e profissão"
+    // Dados de entrada armazenado nas variável sal e prof
     LEIA sal, prof
 
-    // Insira seu comentário
+    // Executa as instruções sob a condição de um dos casos for verdadeiro
     ESCOLHA
 
-        // Insira seu comentário
+        // Executa a instrução de atribuir à variável sal_reaj o valor 1.5*sal sob a condição de prof == "Técnico"  
         CASO prof == “Técnico”		
             sal_reaj ← 1.5 * sal
 
-        // Insira seu comentário
+        // Executa a instrução de atribuir à variável sal_reaj o valor 1.3*sal sob a condição de prof == "Gerente"  
         CASO prof = “Gerente”		
             sal_reaj ← 1.3 * sal
 
-    // Insira seu comentário
+    // Executa a instrução de atribuir à variável sal_reaj o valor 1.1*sal sob a condição de nenhum dos casos posteriores for verdadeiro
     SENÃO
         sal_reaj ← 1.1 * sal
 
     FIM_ESCOLHA
 
-    // Insira seu comentário
+    // Exibe a mensagem concatenando "Salário Reajustado = “ com a variável sal_reaj
     ESCREVA “Salário Reajustado = “, sal_reaj
 
 FIM
@@ -91,19 +91,23 @@ DECLARE num1, num2, num3, num4: REAL
 
 INICIO
 
-    // Insira seu comentário
+    //  Exibe a mensagem com a solicitação de um número ao usuário
+
     ESCREVA "Digite o número 1:"
 
-    // Insira seu comentário
+    // Dado de entrada armazenado na variável num1
+
     LEIA num1
 
-    // Insira seu comentário
+    // Exibe a mensagem com a solicitação de um número ao usuário
+
     ESCREVA "Digite o número 2:"
 
-    // Insira seu comentário
+    // Dado de entrada armazenado na variável num2
     LEIA num2
 
-    // Insira seu comentário
+    // Exibe a mensagem com a solicitação de um número ao usuário
+
     ESCREVA "Digite o número 3:"
 
     // Insira seu comentário
