@@ -96,23 +96,23 @@ DECLARE sal_atual, sal_reaj: REAL
 
 INICIO
 
-    //  Entrada do usuário de um número inteiro qualquer armezando na variável "numero"
+    // Exibe a mensagem para entrada de dados
     ESCREVA "Digite seu salário atual:"
 
-    // Insira seu comentário
+    // Dado de entrada armazenado na variável sal_atual
     LEIA sal_atual
 
-    // Insira seu comentário
+    // Executa a instrução de atribuir o valor ´sal_atual*1.2´ à variável 'sal_reaj' sob a condição "sal_atual <= 500" é verdadeira
     SE sal_atual <= 500 ENTAO
         sal_reaj = sal_atual * 1.2
 
-    // Insira seu comentário
+    // Executa a instrução de atribuir o valor ´sal_atual*1.1´ à variável 'sal_reaj' sob a condição "sal_atual <= 500" é falsa
     SENAO
         sal_reaj = sal_atual * 1.1
 
     FIM_SE
 
-    // Insira seu comentário
+    //  Exibe a mensagem concatenando aos caracteres "O novo salário é R$" com a variável "sal_reaj".
     ESCREVA "O novo salário é R$", sal_reaj
 
 FIM
@@ -156,7 +156,7 @@ DECLARE nota1, nota2, media: REAL
 
 INICIO
 
-    // Insira seu comentário
+    // 
     ESCREVA "Digite a nota 1:"
 
     // Insira seu comentário
