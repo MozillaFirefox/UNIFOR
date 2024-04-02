@@ -96,7 +96,7 @@ DECLARE sal_atual, sal_reaj: REAL
 
 INICIO
 
-    // Exibe a mensagem para entrada de dados
+    // Exibe a mensagem com a solicitação de um número real ao usuário
     ESCREVA "Digite seu salário atual:"
 
     // Dado de entrada armazenado na variável sal_atual
@@ -232,7 +232,7 @@ DECLARE idade, anos_apto: INTEIRO
 
 INICIO
 
-    // Exibe a mensagem para entrada de dados
+    // Exibe a mensagem com a solicitação de um número inteiro ao usuário
     ESCREVA ""Digite a sua idade:"
 
     // Dado de entrada armazenado na variável idade 
