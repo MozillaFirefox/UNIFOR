@@ -1,0 +1,89 @@
+1- Variável X
+
+   Variável n como dado de entrada             
+   Variável num inicializada com valor de 1     num <- 1
+   Variável soma inicializada com valor de 0    soma <- 0
+
+
+1.1 Dado de entrada armazenado como:
+   Dado de entrada armazenado na variável n
+   Dado de entrada armazenado na variável numero
+
+2- Loop condicional  (ENQUANTO)
+
+   Loop condicional (loop while) que executa as instruções enquanto a condição "num <= n" for verdadeira
+   Loop condicional (loop while) executa as instruções enquanto a condição "num < 0" for verdadeira
+   Loop condicional (loop while) executa as instruções enquanto a condição "i <= n" for verdadeira
+   Loop condicional para execucar as instruções até que a nota seja negativa
+
+
+3-Exibe (escreva)
+
+  Exibe a mensagem no número em questão
+  Exibe a mensagem para entrada de dados  (PODE SER USADO COMO ESCREVA DE ENTRADA)
+  Exibe a mensagem como saída de dados
+  Exibe a mensagem com a solicitação de um número ao usuário
+  Exibe a mensagem relativa ao i em cada iteração
+  Exibe a mensagem solicitando o número em cada iteração
+  Exibe a mensagem concatenando aos caracteres "A soma dos número é" com a variável "soma".   ESCREVA "A soma dos número é", soma
+  Exibe a mensagem com o número de alunos aprovados e a média geral
+  
+EU
+  Exibe a mensagem com a solicitação de um número real ao usuário
+  Exibe a mensagem com a solicitação de um número inteiro ao usuário
+
+4-Incrementa ( num <- num + 1)
+
+  Incrementa a variável "num" em 1      num <- num + 1
+  Incrementa a soma conforme cada iteração da variável "i" (para)
+  Incrementa "num" na variável "soma" em cada iteração     soma <- soma + num
+  Incrementa 1 na variável "num" em cada iteração      i <- i + 1
+
+5-Armazena (Leia / uma variável só)
+
+  Armazena a entrada do usuário na variável "n"
+  Armazena o valor de entrada na variável "num"
+  Armazena o valor de entrada na variável "n"
+  Armazena o valor de entrada na variável "nota"
+  
+5.1 É Atribuído:  
+
+Um novo número é atribuido na variável "num"
+
+6- Loop contado
+
+   Loop contado (loop for) executa as instruções a cada iteração dos valores de 'i' de 1 até n, incrementando 'i' em 1.
+   Loop contado (loop for) executa as instruções a cada iteração dos valores de 'i' de 0 até n-1, incrementando 'i' em 3.
+
+7- Entrada do usuário (escreva de entrada)
+
+   Entrada do usuário de um número inteiro qualquer armezando na variável "num"
+   Entrada do usuário da primeira nota
+
+8-Executa Condicional
+
+  Executa as instruções sob a condição "num >= 0" for verdadeira
+  Executa as instruções sob a condição "numero >= 0" for verdadeira
+  Executa a instrução se o resto é igual a zero
+  Executa a instrução se o resto não for igual a zero
+  Executa a instrução se inteiro for negativo
+
+EU
+
+ Executa a instrução de exibir "O número deve ser positivo" sob a condição "numero >= 0" é falsa
+ Executa a instrução de atribuir à variável sal_reaj o valor 1.3*sal sob a condição de prof == "Gerente" 
+  
+9-Calcula
+
+  Calcula o resto da divisão de "num" por 2
+  Calcula a média das notas dos alunos aprovados
+
+10- Inicializa 
+
+    Inicializa a variável "soma" em 0    soma <- 0
+    Inicializa a variável "i" em 1       i <- 1
+    Inicialização das variáveis soma e cont  soma <- 0  cont <- 0
+
+11- Condição
+
+    Condição para exibir a contagem e média das notas se a variável cont for maior que zero.
