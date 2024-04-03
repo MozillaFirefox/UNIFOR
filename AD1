@@ -79,28 +79,30 @@ DECLARE a,b,aux: REAL
 
 INICIO
 
-    // Insira seu comentário
+    // Exibe a mensagem com a solicitação de um número real ao usuário
+
     ESCREVA "Digite o valor da a:"
 
-    // Insira seu comentário
+    // Armazena o valor de entrada na variável "a"
     LEIA a
 
-    // Insira seu comentário
+    // Exibe a mensagem com a solicitação de um número real ao usuário
+
     ESCREVA "Digite o valor da b:"
 
-    // Insira seu comentário
+    // Armazena o valor de entrada na variável "b"
     LEIA b
 
-    // Insira seu comentário
+    // É atribuido o valor de a na variável aux
     aux <- a 
 
-    // Insira seu comentário
+    // É atribuido o valor de b na variável a
     a <- b
 
-    // Insira seu comentário
+    // É atribuido o valor de aux na variável b
     b <- aux
 
-    // Insira seu comentário
+    //Exibe a duas mensagens concatenando os caracteres "a=","b=" as variáveis a e b respectivamente.
     ESCREVA "a=", a
     ESCREVA "b=", b
 
