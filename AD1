@@ -273,43 +273,48 @@ DECLARE n,i,soma: INTEIRO
 
 INICIO
 
-    // Insira seu comentário
+    // Exibe a mensagem para entrada de dados e são armazenados na variável n
     ESCREVA "Digite a quantidade de números<br> (n >= 0):"
     LEIA n
 
-    // Insira seu comentário
+    // Executa as instruções se n >= 0
+
     SE n >=0 ENTAO
 
-        // Insira seu comentário
+        // Inicializa a variável "soma" em 0
         soma <- 0
 
-        // Insira seu comentário
+        //Inicializa a variável "i" em 1
         i <- i
 
-        // Insira seu comentário
+        // Loop condicional (loop while) executa as instruções enquanto a condição "i <= n" for verdadeira
+
         ENQUANTO i <= n FAÇA
 
-            // Insira seu comentário
+            //Exibe a mensagem com a solicitação de um número ao usuário em cada iteração
+
             ESCREVA "Digite um número:"
 
-            // Insira seu comentário
+            //Armazena o valor de entrada na variável "num"
+
             LEIA num 
 
-            // Insira seu comentário
+            // Incrementa "num" na variável "soma" em cada iteração     
+
             soma <- soma + num
 
-            // Insira seu comentário
+            // Incrementa 1 na variável "i" em cada iteração
             i <- i + 1
 
         FIM_ENQUANTO
 
-    // Insira seu comentário
+    //  Executa as instruções se a condição  "n >= 0" for falsa
     SENAO
         "O valor deve ser maior ou igual a zero!"
 
     FIM_SE
 
-    // Insira seu comentário
+    //   Exibe a mensagem com o número de alunos aprovados e a média geral
     ESCREVA "A soma dos numeros é , soma"
 
 FIM
@@ -368,33 +373,33 @@ DECLARE n,numerador,denominador: INTEIRO; termo, S: REAL
 
 INICIO
 
-    // Insira seu comentário
+    // Exibe a mensagem para entrada de dados
     ESCREVA "Digite o número de termos da série S:"
 
-    // Insira seu comentário
+    // Armazena a entrada do usuário na variável "n"
     LEIA n
 
-    // Insira seu comentário
+    // Inicializa a variável "S" em 0 
     S <- 0
 
-    // Insira seu comentário
+    //  Loop contado (loop for) executa as instruções a cada iteração dos valores de 'i' de 0 até n-1, incrementando 'i' em 1
     PARA i de 0 ATÉ n-1 PASSO 1 FAÇA
 
-        // Insira seu comentário
+        //É atribuido à variável numerador o valor de   2 * i + 1
         numerador = 2 * i + 1
 
-        // Insira seu comentário
+        //É atribuido à variável denominador o valor de   2 * i + 2
         denominador <- 2 * i + 2
 
-        // Insira seu comentário
-        termo = numerador / denominador
+        // É atribuido à variável termo o valor de  termo = numerador / denominador
 
-        // Insira seu comentário
+        // Incrementa a variável "S" em termo cada iteração
         S += termo
 
     FIM_PARA
 
-    // Insira seu comentário
+    //  Exibe a mensagem concatenando aos caracteres "Soma da série S é " com a variável "S".   
+
     ESCREVA "Soma da série S é ", S
 
 FIM
@@ -447,30 +452,30 @@ DECLARE n: INTEIRO
 
 INICIO
 
-    // Insira seu comentário
+    // Entrada do usuário de um número inteiro qualquer 
     ESCREVA "Digite um numero inteiro nao-negativo:"
 
-    // Insira seu comentário
-    LEIA n
+    //   Armazena o valor de entrada na variável "n"
+    LEIA   
 
-    // Insira seu comentário
+    // Executa as instruções sob a condição "n >= 0" for verdadeira
     SE n >= 0 ENTAO
 
-        // Insira seu comentário
+        //   Inicializa a variável "i" em 1  
         fator <- 1
 
-        // Insira seu comentário
+        // Loop contado (loop for) executa as instruções a cada iteração dos valores de 'i' de 1 até n, incrementando 'i' em 1
         PARA i DE 1 ATÉ n PASSO 1 FAÇA
 
-            // Insira seu comentário
+            //É atribuido à variável fator o valor de fator*i
             fator <- fator * i        // fator *= i
 
         FIM_PARA
 
-        // Insira seu comentário
+        // Exibe a mensagem do valor de fatorial de n
         ESCREVA "O fatorial de, n, é:", fator
 
-    // Insira seu comentário
+    // Executa as instruções sob a condição "n >= 0" for falsa
     SENAO
         ESCREVA "O valor deve ser maior ou igual a zero!"
     FIM_SE
@@ -526,31 +531,32 @@ DECLARE n, a, b, termo_atual: INTEIRO
 
 INICIO
 
-    // Insira seu comentário
+    //   Exibe a mensagem com a solicitação de um número ao usuário
     ESCREVA "Número de termos da série Fibonacci:"
 
-    // Insira seu comentário
+    // Armazena o valor de entrada na variável "n"
+
     LEIA n
 
-    // Insira seu comentário
+    // Inicializa a variável "a" em 0 
     a <- 0
 
-    // Insira seu comentário
+    //Inicializa a variável "b" em 1  
     b <- 1
 
-    // Insira seu comentário
+    // Loop contado (loop for) executa as instruções a cada iteração dos valores de 'i' de 1 até n, incrementando 'i' em 1
     PARA i DE 1 ATE n PASSO 1 FAÇA
 
-        // Insira seu comentário
+        // Exibe a variável a
         ESCREVA a
 
-        // Insira seu comentário
+        // O valor de a + b é atribuido na variável "termo_atual"
         termo_atual <- a + b
 
-        // Insira seu comentário
+        // O valor de b é atribuido à a
         a <- b
 
-        // Insira seu comentário
+        // O valor de termo_atual é atribuido à b
         b <- termo_atual
 
     FIM_PARA
@@ -608,35 +614,38 @@ DECLARE num, num_inv, digito: INTEIRO
 
 INICIO
 
-    // Insira seu comentário
+    //Entrada do usuário de um número inteiro qualquer armezando na variável "num"
+
     ESCREVA "Digite o número a ser invertido:"
     LEIA num
 
-    // Insira seu comentário
+    // Executa as instruções sob a condição "num < 0" for verdadeira
+
     SE num < 0 ENTAO
 
-        // Insira seu comentário
+        //  Exibe a mensagem "O número deve ser positivo!"
+
         ESCREVA "O número deve ser positivo!"
 
-    // Insira seu comentário
+    // Executa as instruções sob a condição "num < 0" for falsa
     SENAO
 
-        // Insira seu comentário
+        // Inicializa a variável "i" em 1       
         num_inv <- 0
 
-        // Insira seu comentário
+        // Loop condicional (loop while) que executa as instruções enquanto a condição "num > 0" for verdadeira
         ENQUANTO num > 0 FAÇA
 
-            // Insira seu comentário
+            // É atribuido o valor num % 10 à variável digito
             digito <- num % 10
 
-            // Insira seu comentário
+            // É atribuido o valor (num_inv * 10) + digito à variavel num_inv
             num_inv <- (num_inv * 10) + digito
 
-            // Insira seu comentário
+            // É atribuido o valor num // 10 à variável num
             num <- num // 10
 
-        // Insira seu comentário
+        // Exibe a mensagem concatenando aos caracteres "Número invertido:" com a variável num_inv 
         ESCREVA "Número invertido:", num_inv
 
     FIM_SE
