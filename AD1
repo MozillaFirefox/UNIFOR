@@ -177,36 +177,36 @@ DECLARE n, cont, nota, i: INTEIRO
 
 INICIO
 
-    // Insira seu comentário
+    //   Exibe a mensagem com a solicitação de um número inteiro ao usuário
     ESCREVA "Digite a quantidade de notas dos alunos:"
 
-    // Insira seu comentário
+    //  Armazena a entrada do usuário na variável "n"
     LEIA n
 
-    // Insira seu comentário
+    // Inicialização da variável cont  cont = 0
     cont = 0 
 
-    // Insira seu comentário
+    // Loop contado (loop for) executa as instruções a cada iteração dos valores de 'i' de 1 até n, incrementando 'i' em 1.
     PARA i DE 1 ATE n FAÇA
 
-        // Insira seu comentário
+        // Exibe a mensagem com a solicitação de um número ao usuário
         ESCREVA "Digite a nota do aluno", i, ":"
 
-        // Insira seu comentário
+        // Armazena o valor de entrada na variável "nota"
         LEIA nota
 
-        // Insira seu comentário
+        //  Executa as instruções sob a condição "nota >= 50 E nota <= 100" for verdadeira
         SE nota >= 50 E nota <= 100 ENTAO
 
-            // Insira seu comentário
+            // Incrementa a variável "cont" em 1
             cont = cont + 1 
 
         FIM_SE
 
     FIM_PARA
 
-    // Insira seu comentário
-    ESCREVA "O numero de alunos aprovados e:", cont
+    // Exibe a mensagem concatenando aos caracteres "O número de alunos aprovados é: " com a variável "cont". 
+    ESCREVA "O numero de alunos aprovados é:", cont
 
 FIM
 ```
