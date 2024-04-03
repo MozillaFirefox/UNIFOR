@@ -111,16 +111,17 @@ INICIO
 
     ESCREVA "Digite o número 3:"
 
-    // Insira seu comentário
+    // Dado de entrada armazenado na variável num3
     LEIA num3
 
-    // Insira seu comentário
+    // Exibe a mensagem com a solicitação de um número ao usuário 
     ESCREVA "Digite o número 4:"
 
-    // Insira seu comentário
+    // Dado de entrada armazenado na variável num2
     LEIA num4
 
-    // Insira seu comentário
+    // Calcula a média das notas atribuindo o valor de (num1 + num2 + num3 + num4)/4 à variável media, por fim exibe a mensagem concatenando "A média é" com a variável media
+
     media <- (num1 + num2 + num3 + num4)/4
     ESCREVA "A média é", media
 
@@ -155,16 +156,18 @@ DECLARE C, F: REAL
 
 INICIO
 
-    // Insira seu comentário
+    //  Exibe a mensagem com a solicitação de um número real ao usuário
     ESCREVA "Digite a temperatura em Celisus:"
 
-    // Insira seu comentário
+    // Armazena o valor de entrada na variável "C"
+
     LEIA C
 
-    // Insira seu comentário
+    // Calcula a temperatura em Farenheit atribuindo o valor da expressão (9/5) * C + 32 à variável F
     F <- (9/5) * C + 32
 
-    // Insira seu comentário
+    //   Exibe a mensagem relativa à temperatura em Fº
+
     ESCREVA "A temperatura em Fahrenheit é", F, "graus"
 
 FIM
@@ -222,72 +225,75 @@ DECLARE op: INTEIRO; num1,num2,res: REAL
 
 INICIO
 
-    // Insira seu comentário
+    // Exibe a mensagem com as operações válidas 
+
     ESCREVA "Operações válidas: 1(soma), 2(subtração), 3(multiplicação) e 4(divisão)"
 
-    // Insira seu comentário
+    // Exibe a mensagem com a solicitação de um número ao usuário de 1 à 4 referente às operações
+
     ESCREVA "Digite uma operação:"
 
-    // Insira seu comentário
+    // Armazena o valor de entrada na variável "op"
+
     LEIA op
 
-    // Insira seu comentário
+    // Exibe a mensagem solicitando um número real o qual é atribuido à variável num1
     ESCREVA "Digite um número:"
     LEIA num1
 
-    // Insira seu comentário
+    // Exibe a mensagem solicitando um número real o qual é atribuido à variável num2
     ESCREVA "Digite outro número:"
     LEIA num2
 
-    // Insira seu comentário
+    // Executa as instruções sob a condição de um dos casos for verdadeiro
     ESCOLHA
 
-        // Insira seu comentário
+        // Executa as instruções  sob a condição de op == 1  
         CASO op == 1
 
-            // Insira seu comentário
+            // É atribuido à variável res o valor num1 + num2
             res = num1 + num2
 
-            // Insira seu comentário
+            // Exibe a mensagem concatenando a variável num1, o caractere +, a variável num2, o caractere =, e a variável res nessa ordem. 
             ESCREVA num1, "+", num2, "=", res
 
-        // Insira seu comentário
+        // Executa as instruções  sob a condição de op == 2  
         CASO op == 2
 
-            // Insira seu comentário
+            // É atribuido à variável res o valor num1 - num2
             res = num1 - num2
 
-            // Insira seu comentário
+            // Exibe a mensagem concatenando a variável num1, o caractere -, a variável num2, o caractere =, e a variável res nessa ordem. 
             ESCREVA num1, "-", num2, "=", res
 
-        // Insira seu comentário
+        //Executa as instruções  sob a condição de op == 3  
         CASO op == 3
 
-            // Insira seu comentário
+            // É atribuido à variável res o valor num1 * num2
             res = num1 * num2
 
-            // Insira seu comentário
+            // Exibe a mensagem concatenando a variável num1, o caractere *, a variável num2, o caractere =, e a variável res nessa ordem.  
             ESCREVA num1, "*", num2, "=", res
 
-        // Insira seu comentário
+        // Executa as instruções  sob a condição de op == 4  
         CASO op == 4
 
-            // Insira seu comentário
+            // Executa as instruções  sob a condição de num2 != 0
             SE num2 != 0 ENTAO
 
-                // Insira seu comentário
+                // É atribuido o valor num1 / num2 à variável res
                 res = num1 / num2
 
-                // Insira seu comentário
+                // Exibe a mensagem concatenando a variável num1, o caractere /, a variável num2, o caractere =, e a variável res nessa ordem.  
                 ESCREVA num1, "/", num2, "=", res
 
-            // Insira seu comentário
+            //  Executa as instruções  sob a condição de num2 != 0 ser falso
             SENAO
                 ESCREVA "Impossível dividir!"
 
             FIM_SE
 
-    // Insira seu comentário
+    // Executa as instruções  sob a condição de nenhum dos casos posteriores for verdadeiro.
     SENAO
         ESCREVA "Operação inválida!"
 
